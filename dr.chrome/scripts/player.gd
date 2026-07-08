@@ -20,6 +20,8 @@ func _physics_process(_delta: float) -> void:
 
 # Interaction Stuffs
 
+func interact() -> void:
+	return 
 
 
 
