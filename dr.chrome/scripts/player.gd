@@ -18,6 +18,11 @@ func _physics_process(_delta: float) -> void:
 
 
 
+# Interaction Stuffs
+
+
+
+
 
 # Movement and Anim Stuffs
 
