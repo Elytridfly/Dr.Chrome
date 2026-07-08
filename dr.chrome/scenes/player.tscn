@@ -101,10 +101,6 @@ region = Rect2(64, 32, 32, 32)
 atlas = ExtResource("3_qlg0r")
 region = Rect2(96, 32, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mx1m4"]
-atlas = ExtResource("4_tuyoq")
-region = Rect2(0, 0, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_4gjji"]
 atlas = ExtResource("4_tuyoq")
 region = Rect2(32, 0, 32, 32)
@@ -117,9 +113,9 @@ region = Rect2(64, 0, 32, 32)
 atlas = ExtResource("4_tuyoq")
 region = Rect2(96, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_apa73"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mx1m4"]
 atlas = ExtResource("4_tuyoq")
-region = Rect2(0, 128, 32, 32)
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_74r1k"]
 atlas = ExtResource("4_tuyoq")
@@ -133,9 +129,9 @@ region = Rect2(64, 128, 32, 32)
 atlas = ExtResource("4_tuyoq")
 region = Rect2(96, 128, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ua5cf"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_apa73"]
 atlas = ExtResource("4_tuyoq")
-region = Rect2(0, 64, 32, 32)
+region = Rect2(0, 128, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_51ujp"]
 atlas = ExtResource("4_tuyoq")
@@ -148,6 +144,10 @@ region = Rect2(64, 64, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_fuw3a"]
 atlas = ExtResource("4_tuyoq")
 region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ua5cf"]
+atlas = ExtResource("4_tuyoq")
+region = Rect2(0, 64, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1vivr"]
 animations = [{
@@ -255,9 +255,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mx1m4")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_4gjji")
 }, {
 "duration": 1.0,
@@ -265,15 +262,15 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_6e8lb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mx1m4")
 }],
 "loop": 1,
 "name": &"walking0",
 "speed": 4.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_apa73")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_74r1k")
 }, {
@@ -282,15 +279,15 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2a3c5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_apa73")
 }],
 "loop": 1,
 "name": &"walking180",
 "speed": 4.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ua5cf")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_51ujp")
 }, {
@@ -299,6 +296,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_fuw3a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ua5cf")
 }],
 "loop": 1,
 "name": &"walking90",
@@ -316,7 +316,7 @@ position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_1vivr")
 animation = &"idle0"
 autoplay = "idle0"
-frame_progress = 0.6191434
+frame_progress = 0.67087364
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=354239788]
 position = Vector2(0, -7)
