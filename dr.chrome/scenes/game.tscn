@@ -6,8 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://baen4cjt1a0wj" path="res://assets/Topdown Hospital/Spritesheets/spritesheet_hospital_02.png" id="3_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://b2ebkgvgowcqj" path="res://assets/Topdown Hospital/Spritesheets/spritesheet_hospital_lab.png" id="4_iywne"]
 [ext_resource type="Texture2D" uid="uid://bcwdbg27tukqi" path="res://assets/Topdown Hospital/Spritesheets/spritesheet_hospital_maternity.png" id="5_p57ef"]
-[ext_resource type="Texture2D" uid="uid://cdrqvk2ffbxnj" path="res://assets/Science UI/Science UI/Pause_Button.png" id="7_u5sy4"]
-[ext_resource type="Script" uid="uid://vwt06xuycmtm" path="res://scripts/UI.gd" id="8_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://8kvu0untjq7k" path="res://scenes/pause_menu.tscn" id="8_gee14"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
@@ -31,11 +29,11 @@ texture = ExtResource("2_yqjtg")
 24:14/size_in_atlas = Vector2i(4, 3)
 24:14/0 = 0
 24:14/0/texture_origin = Vector2i(-24, -16)
-24:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 56, -8, 56, 40, -8, 36)
+24:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, 4, 48, 4, 48, 36, 44, 40, 0, 36)
 28:14/size_in_atlas = Vector2i(4, 3)
 28:14/0 = 0
 28:14/0/texture_origin = Vector2i(-24, -16)
-28:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 56, -8, 56, 40, -8, 36)
+28:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, 4, 48, 4, 48, 36, 44, 40, 0, 36)
 32:14/size_in_atlas = Vector2i(2, 2)
 32:14/0 = 0
 32:14/0/texture_origin = Vector2i(-8, -8)
@@ -490,8 +488,6 @@ sources/4 = SubResource("TileSetAtlasSource_u5sy4")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_1vivr"]
 distance = -138.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
-
 [node name="Game" type="Node2D" unique_id=1491512574]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=455236952]
@@ -527,18 +523,6 @@ position = Vector2(-166, -13)
 position = Vector2(-1, 32)
 zoom = Vector2(4, 4)
 
-[node name="PauseButton" type="Sprite2D" parent="." unique_id=1150513617]
-position = Vector2(-239, -98)
-texture = ExtResource("7_u5sy4")
-
-[node name="Area2D" type="Area2D" parent="PauseButton" unique_id=1721249268]
-script = ExtResource("8_0tnpc")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PauseButton/Area2D" unique_id=1000813439]
-shape = SubResource("RectangleShape2D_1vivr")
-
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2104295858]
 
 [node name="PauseMenu" parent="CanvasLayer" unique_id=234955865 instance=ExtResource("8_gee14")]
-
-[connection signal="input_event" from="PauseButton/Area2D" to="CanvasLayer/PauseMenu" method="_on_area_2d_input_event"]
