@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://b2ebkgvgowcqj" path="res://assets/Topdown Hospital/Spritesheets/spritesheet_hospital_lab.png" id="4_iywne"]
 [ext_resource type="Texture2D" uid="uid://bcwdbg27tukqi" path="res://assets/Topdown Hospital/Spritesheets/spritesheet_hospital_maternity.png" id="5_p57ef"]
 [ext_resource type="Texture2D" uid="uid://cdrqvk2ffbxnj" path="res://assets/Science UI/Science UI/Pause_Button.png" id="7_u5sy4"]
+[ext_resource type="Script" uid="uid://vwt06xuycmtm" path="res://scripts/UI.gd" id="8_0tnpc"]
+[ext_resource type="PackedScene" uid="uid://8kvu0untjq7k" path="res://scenes/pause_menu.tscn" id="8_gee14"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -488,6 +490,8 @@ sources/4 = SubResource("TileSetAtlasSource_u5sy4")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_1vivr"]
 distance = -138.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+
 [node name="Game" type="Node2D" unique_id=1491512574]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=455236952]
@@ -498,17 +502,6 @@ layer_1/name = "Layer1"
 layer_1/tile_data = PackedInt32Array(-65537, 1703936, 4, -131071, 1703936, 6, -65541, 1572864, 10, -196611, 1703936, 0, -196601, 1048576, 10, -327677, 2097152, 6, -131083, 983040, 15, 262149, 1572864, 14, -131067, 1835008, 6, -196594, 786432, 15, -131063, 1572864, 4, -131061, 1835008, 4, -131069, 1310720, 14, 196602, 1572864, 1610612746, 262138, 1572864, 1073741834, 196614, 1310720, 4, 327688, 1310720, 8, 393202, 4, 0, 458740, 327682, 4, 458737, 65537, 0)
 layer_2/name = "Layer2"
 layer_2/tile_data = PackedInt32Array(-65537, 1835008, 2, -131077, 851968, 6, 262149, 2490368, 16, -262133, 2490368, 6, -262143, 2359296, 10, -131087, 1048576, 0, -131080, 786432, 0, -327672, 1048576, 2, -131061, 1703936, 2, 327687, 131073, 3, 327686, 196609, 3, -131071, 131073, 2, -196608, 1, 2, -131067, 327683, 3, 458746, 458755, 2, 393210, 327683, 4, -131070, 458755, 4, 262138, 458755, 3, 131066, 458755, 4, -65531, 458755, 4, -65535, 327683, 2, -262140, 327683, 3, 65530, 262146, 2, 131068, 458754, 0, 393212, 458754, 0)
-
-[node name="Player" parent="." unique_id=1888553610 instance=ExtResource("1_uwrxv")]
-position = Vector2(-166, -13)
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1778874411]
-position = Vector2(-1, 32)
-zoom = Vector2(2.25, 2.25)
-
-[node name="PauseButton" type="Sprite2D" parent="Camera2D" unique_id=1150513617]
-position = Vector2(-238, -130)
-texture = ExtResource("7_u5sy4")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1248504717]
 visible = false
@@ -526,3 +519,26 @@ shape = SubResource("WorldBoundaryShape2D_1vivr")
 position = Vector2(128, 0)
 rotation = 4.712389
 shape = SubResource("WorldBoundaryShape2D_1vivr")
+
+[node name="Player" parent="." unique_id=1888553610 instance=ExtResource("1_uwrxv")]
+position = Vector2(-166, -13)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1778874411]
+position = Vector2(-1, 32)
+zoom = Vector2(4, 4)
+
+[node name="PauseButton" type="Sprite2D" parent="." unique_id=1150513617]
+position = Vector2(-239, -98)
+texture = ExtResource("7_u5sy4")
+
+[node name="Area2D" type="Area2D" parent="PauseButton" unique_id=1721249268]
+script = ExtResource("8_0tnpc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PauseButton/Area2D" unique_id=1000813439]
+shape = SubResource("RectangleShape2D_1vivr")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2104295858]
+
+[node name="PauseMenu" parent="CanvasLayer" unique_id=234955865 instance=ExtResource("8_gee14")]
+
+[connection signal="input_event" from="PauseButton/Area2D" to="CanvasLayer/PauseMenu" method="_on_area_2d_input_event"]
