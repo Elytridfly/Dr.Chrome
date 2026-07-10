@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ckgfywth646du"]
+
+[ext_resource type="Script" uid="uid://cwxpx2jw5ymyj" path="res://scripts/computer.gd" id="1_8pqrt"]
+[ext_resource type="Texture2D" uid="uid://cqpp8jw7r7o0s" path="res://assets/computer_Orange.tres" id="2_7ikar"]
+[ext_resource type="Texture2D" uid="uid://c5f25issn5ooe" path="res://assets/computer_Blue.tres" id="3_tjrug"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(64, 56.75)
+
+[node name="Area2D" type="Area2D" unique_id=1828647403]
+script = ExtResource("1_8pqrt")
+default_texture = ExtResource("2_7ikar")
+touched_texture = ExtResource("3_tjrug")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1324659603]
+position = Vector2(32, 17)
+texture = ExtResource("2_7ikar")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=368772779]
+position = Vector2(32, 28.625)
+shape = SubResource("RectangleShape2D_1vivr")

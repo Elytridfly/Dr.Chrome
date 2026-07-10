@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" format=3 uid="uid://cqpp8jw7r7o0s"]
+
+[ext_resource type="Texture2D" uid="uid://rxrrp7n07rk" path="res://assets/Pixel Cyberpunk Interior/pixel-cyberpunk-interior.png" id="1_muhkm"]
+
+[resource]
+atlas = ExtResource("1_muhkm")
+region = Rect2(208, 96, 64, 32)
