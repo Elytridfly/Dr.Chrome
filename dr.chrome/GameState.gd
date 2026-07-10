@@ -9,6 +9,9 @@ var blood: bool = false
 var analysis: bool = false
 var report: bool = false
 
+var karyotype_layout: Array = []
+var karyotype_generated:= false
+
 func pick_up_item() -> void:
 	if blood:
 		return

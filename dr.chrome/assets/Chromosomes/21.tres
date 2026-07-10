@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" format=3 uid="uid://615xkui48bwa"]
+
+[ext_resource type="Texture2D" uid="uid://bmjqj2au8yrlf" path="res://assets/Chromosome_half.png" id="1_rd22h"]
+
+[resource]
+atlas = ExtResource("1_rd22h")
+region = Rect2(258, 643, 22, 56)

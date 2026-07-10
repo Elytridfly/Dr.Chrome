@@ -1,10 +1,15 @@
 [gd_scene format=3 uid="uid://xp66tku42axo"]
 
 [ext_resource type="Texture2D" uid="uid://dadoowdvjgpi8" path="res://assets/UI_Containers.tres" id="1_2t18v"]
+[ext_resource type="Script" uid="uid://dwi0ryl6jgnfk" path="res://scripts/spawner.gd" id="1_37vo1"]
+[ext_resource type="Texture2D" uid="uid://c5bdibovkpa1w" path="res://assets/Chromosome_Sheet.png" id="2_d136o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ithaw"]
 atlas = ExtResource("1_2t18v")
 region = Rect2(321, 208, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1vivr"]
+atlas = ExtResource("2_d136o")
 
 [node name="Control" type="Control" unique_id=892762109]
 layout_mode = 3
@@ -19,8 +24,17 @@ offset_right = -4.0
 offset_bottom = 33.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_37vo1")
+source_chrom_size = null
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=829177207]
-position = Vector2(97.00001, 0)
-scale = Vector2(11.044643, 8.491072)
+position = Vector2(7.6293945e-06, 0)
+scale = Vector2(7.5, 7.5)
 texture = SubResource("AtlasTexture_ithaw")
+
+[node name="ChromosomeSheet" type="Sprite2D" parent="." unique_id=922532539]
+visible = false
+position = Vector2(-11, 29)
+texture = SubResource("AtlasTexture_1vivr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1149281339]
