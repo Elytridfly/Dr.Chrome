@@ -1,5 +1,11 @@
 [gd_scene format=3 uid="uid://xp66tku42axo"]
 
+[ext_resource type="Texture2D" uid="uid://dadoowdvjgpi8" path="res://assets/UI_Containers.tres" id="1_2t18v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ithaw"]
+atlas = ExtResource("1_2t18v")
+region = Rect2(321, 208, 112, 112)
+
 [node name="Control" type="Control" unique_id=892762109]
 layout_mode = 3
 anchors_preset = 8
@@ -14,21 +20,7 @@ offset_bottom = 33.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="UI" type="ColorRect" parent="." unique_id=1879157267]
-layout_mode = 0
-offset_left = -128.0
-offset_top = -128.0
-offset_right = 128.0
-offset_bottom = 128.0
-color = Color(0.40392157, 0.6784314, 1, 1)
-
-[node name="Label" type="Label" parent="UI" unique_id=1872024394]
-layout_mode = 0
-offset_left = 31.0
-offset_top = 94.0
-offset_right = 225.0
-offset_bottom = 165.0
-theme_override_font_sizes/font_size = 24
-text = "This is a very beautiful UI"
-horizontal_alignment = 1
-autowrap_mode = 3
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=829177207]
+position = Vector2(97.00001, 0)
+scale = Vector2(11.044643, 8.491072)
+texture = SubResource("AtlasTexture_ithaw")
