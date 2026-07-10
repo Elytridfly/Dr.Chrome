@@ -24,10 +24,10 @@ func _on_interacted() -> void:
 	get_tree().current_scene.add_child(ui_instance)
 	ui_instance.process_mode = Node.PROCESS_MODE_ALWAYS
 	get_tree().paused = true
-	GameState.ui_blocking_input = true   # see step 3
+	GameState.ui_blocking_input = true
 
 func _unhandled_input(event: InputEvent) -> void:
-	super._unhandled_input(event)  # <-- this line is why interact broke; do not omit it
+	super._unhandled_input(event)
 	if ui_instance != null and event.is_action_pressed("ui_cancel"):
 		_close_ui()
 		get_viewport().set_input_as_handled()
@@ -37,3 +37,4 @@ func _close_ui() -> void:
 	ui_instance = null
 	get_tree().paused = false
 	GameState.ui_blocking_input = false
+	GameState.report_ready()
