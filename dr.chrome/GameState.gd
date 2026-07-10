@@ -8,9 +8,19 @@ var ui_blocking_input: bool = false
 var blood: bool = false
 var analysis: bool = false
 var report: bool = false
+var have_sex := false
 
-var karyotype_layout: Array = []
-var karyotype_generated:= false
+
+enum Sex{MALE, FEMALE}
+
+var patient_sex: int = Sex.MALE
+
+func determine_sex() -> void:
+	if have_sex:
+		return
+	patient_sex = Sex.MALE if randi() % 2 == 0 else Sex.FEMALE
+	have_sex = true
+	return
 
 func pick_up_item() -> void:
 	if blood:

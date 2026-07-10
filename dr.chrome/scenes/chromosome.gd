@@ -1,30 +1,28 @@
-extends Sprite2D
+extends Area2D
+
+@export var chromosome_id : String = "1"
+@export var homolog : int = 1
 
 var dragging := false
 var drag_offset := Vector2.ZERO
 
 const ROTATE_STEP := deg_to_rad(15)
 
+
 func _ready() -> void:
-	input_pickable = true
+	add_to_group("chromosome")
 
 
-func _input(event: InputEvent) -> void:
+func _input_event(_viewport, event, _shape_idx):
 
 	if event is InputEventMouseButton:
 
 		if event.button_index == MOUSE_BUTTON_LEFT:
 
 			if event.pressed:
-
-				var rect := Rect2(
-					-texture.get_size() / 2,
-					texture.get_size()
-				)
-
-				if rect.has_point(to_local(get_global_mouse_position())):
-					dragging = true
-					drag_offset = global_position - get_global_mouse_position()
+				dragging = true
+				drag_offset = global_position - get_global_mouse_position()
+				get_viewport().set_input_as_handled()
 
 			else:
 				dragging = false
@@ -36,6 +34,7 @@ func _input(event: InputEvent) -> void:
 			rotation += ROTATE_STEP
 
 
-func _process(_delta: float) -> void:
+func _process(_delta):
+
 	if dragging:
 		global_position = get_global_mouse_position() + drag_offset
