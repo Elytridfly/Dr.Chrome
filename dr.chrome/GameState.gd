@@ -12,6 +12,7 @@ var have_sex := false
 
 var karyotype_state := {}
 var active_interactable: Node = null
+var selected_chromosome: Node = null
 
 enum Sex{MALE, FEMALE}
 

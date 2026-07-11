@@ -28,12 +28,14 @@ func _open_ui() -> void:
 	get_tree().current_scene.add_child(ui_instance)
 	GameState.ui_blocking_input = true
 	GameState.active_interactable = self
+	
 
 func _close_ui() -> void:
 	ui_instance.queue_free()
 	ui_instance = null
 	GameState.ui_blocking_input = false
 	GameState.active_interactable = null
+	GameState.report_ready()
 
 func _unhandled_input(event: InputEvent) -> void:
 	super._unhandled_input(event)
