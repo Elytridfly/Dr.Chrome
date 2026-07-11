@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://bpk8wrwj5o67e"]
 
-[ext_resource type="Script" uid="uid://y7efdcb70kts" path="res://scenes/chromosome.gd" id="1_16cws"]
+[ext_resource type="Script" uid="uid://y7efdcb70kts" path="res://scripts/chromosome.gd" id="1_16cws"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_16cws"]
 
 [node name="Chromosome" type="Area2D" unique_id=421906681]
 script = ExtResource("1_16cws")
@@ -8,3 +10,4 @@ script = ExtResource("1_16cws")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=841505919]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1610986239]
+shape = SubResource("RectangleShape2D_16cws")
