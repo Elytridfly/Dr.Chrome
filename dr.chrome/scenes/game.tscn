@@ -17,8 +17,6 @@
 [ext_resource type="PackedScene" uid="uid://c1biql2hguepm" path="res://scenes/kMachine.tscn" id="13_kvuet"]
 [ext_resource type="Texture2D" uid="uid://cqpp8jw7r7o0s" path="res://assets/computer_Orange.tres" id="14_ca42v"]
 [ext_resource type="Script" uid="uid://caitpgmkx2muw" path="res://scripts/analysis.gd" id="15_rysoc"]
-[ext_resource type="PackedScene" uid="uid://cw1v02qvppqf0" path="res://scenes/draggable.tscn" id="17_264po"]
-[ext_resource type="Texture2D" uid="uid://i52m4yx0y0hn" path="res://icon.svg" id="18_1kice"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -576,11 +574,6 @@ position = Vector2(216, 148)
 scale = Vector2(0.5000001, 0.75)
 texture = ExtResource("14_ca42v")
 script = ExtResource("15_rysoc")
-
-[node name="Draggable" parent="." unique_id=1342025069 instance=ExtResource("17_264po")]
-position = Vector2(-136, 48)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("18_1kice")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2104295858]
 

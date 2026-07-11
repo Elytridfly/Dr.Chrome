@@ -1,6 +1,7 @@
 extends Control
 
 func _ready():
+	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	$AnimationPlayer.play("RESET")
 	$PanelContainer.visible = false
 	$ColorRect.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -14,12 +15,14 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func resume():
 	get_tree().paused = false
+	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	$AnimationPlayer.play_backwards("blur")
 	await $AnimationPlayer.animation_finished
 	$PanelContainer.visible = false
 
 func pause():
 	get_tree().paused = true
+	mouse_filter = Control.MOUSE_FILTER_STOP
 	$PanelContainer.visible = true
 	$AnimationPlayer.play("blur")
 

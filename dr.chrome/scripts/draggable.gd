@@ -1,28 +1,17 @@
-extends Sprite2D
-
+extends Area2D
 var dragging = false
-var current_tween: Tween
+
+func _ready():
+	input_event.connect(_on_input_event)
 
 func _process(delta):
 	if dragging:
-		if current_tween:
-			current_tween.kill()
+		global_position = get_global_mouse_position()
 
-		current_tween = create_tween()
-		current_tween.tween_property(
-			self,
-			"global_position",
-			get_global_mouse_position(),
-			0.1
-		)
-
-func _input(event):
+func _on_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		if event.pressed:
-			print(to_local(event.position))
-			print(get_rect())
-			if get_rect().has_point(to_local(event.position)):
-				dragging = !dragging
+		dragging = event.pressed
 
-				if !dragging and current_tween:
-					current_tween.kill()
+func _unhandled_input(event):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and not event.pressed:
+		dragging = false
