@@ -17,6 +17,7 @@ offset_bottom = 33.0
 grow_horizontal = 2
 grow_vertical = 2
 offset_transform_enabled = true
+mouse_filter = 2
 
 [node name="window" type="Sprite2D" parent="." unique_id=829177207]
 position = Vector2(1.5258789e-05, 0)

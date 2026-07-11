@@ -12,7 +12,9 @@ var state_key: String
 
 func _ready() -> void:
 	add_to_group("chromosome")
+	print("picking enabled: ", get_viewport().physics_object_picking)
 	state_key = "%s_%d" % [chromosome_id, homolog]
+	print("added chromosome:", chromosome_id)
 
 	var tex: Texture2D = load("res://assets/Chromosomes/%s.tres" % chromosome_id)
 	sprite.texture = tex
@@ -27,6 +29,7 @@ func _on_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			if event.pressed:
+				print("clicked", chromosome_id)
 				dragging = true
 				drag_offset = global_position - get_global_mouse_position()
 				get_viewport().set_input_as_handled()
