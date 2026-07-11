@@ -16,13 +16,13 @@ func get_spawn_rect() -> Rect2:
 	if self.texture:
 		size = self.texture.get_size() * self.scale
 	var top_left = self.global_position - size / 2
-	return Rect2(top_left, size)
+	return Rect2(Vector2(-75,-75), size - Vector2(75,75))
 
 func setup_chromosomes():
 	var rect = get_spawn_rect()
 	var sample_tex: Texture2D = load("res://assets/Chromosomes/1.tres")
 	var piece_size: Vector2 = sample_tex.get_size() * PIECE_SCALE
-	var inset_rect = Rect2(rect.position + piece_size / 2, rect.size - piece_size)
+	var inset_rect = Rect2(rect.position + piece_size / 2  , rect.size - piece_size)
 
 	for i in range(1, 23):
 		_spawn_piece(str(i), 1, inset_rect)
