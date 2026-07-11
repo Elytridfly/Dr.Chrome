@@ -22,6 +22,8 @@ func _on_body_exited(body: Node2D) -> void:
 		_on_player_exited()
 
 func _unhandled_input(event: InputEvent) -> void:
+	if GameState.ui_blocking_input and GameState.active_interactable != self:
+		return
 	if player_in_range and event.is_action_pressed(interact_action):
 		interacted.emit()
 		get_viewport().set_input_as_handled()

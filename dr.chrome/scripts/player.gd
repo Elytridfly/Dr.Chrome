@@ -29,13 +29,15 @@ func interact() -> void:
 # Movement and Anim Stuffs
 
 func process_movement() -> void:
-	var direction := Input.get_vector("left", "right","up","down")
+	if GameState.ui_blocking_input:
+		velocity = Vector2.ZERO
+		return
+	var direction := Input.get_vector("left", "right", "up", "down")
 	if direction != Vector2.ZERO:
 		velocity = direction * SPEED
 		last_dir = direction
 	else:
 		velocity = Vector2.ZERO
-	
 
 
 func process_anim() -> void:

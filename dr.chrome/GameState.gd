@@ -10,6 +10,8 @@ var analysis: bool = false
 var report: bool = false
 var have_sex := false
 
+var karyotype_state := {}
+var active_interactable: Node = null
 
 enum Sex{MALE, FEMALE}
 
