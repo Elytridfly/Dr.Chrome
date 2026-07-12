@@ -1,5 +1,7 @@
 extends Sprite2D
 
+@export var guide_node: NodePath
+
 const PIECE_SCENE : PackedScene = preload("res://scenes/Chromosome.tscn")
 const PIECE_SCALE := 0.25
 var spawn_size := Vector2(300, 400)
@@ -32,6 +34,14 @@ func setup_chromosomes():
 		_spawn_piece("Y", 1, inset_rect)
 	else:
 		_spawn_piece("X", 2, inset_rect)
+		
+	call_deferred("_bring_guide_to_front")
+
+func _bring_guide_to_front() -> void:
+	if guide_node.is_empty():
+		return
+	var guide := get_node(guide_node)
+	guide.move_to_front()
 
 func _spawn_piece(id: String, homolog: int, rect: Rect2) -> void:
 	var piece = PIECE_SCENE.instantiate()

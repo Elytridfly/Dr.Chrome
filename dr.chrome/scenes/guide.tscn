@@ -1,0 +1,353 @@
+[gd_scene format=3 uid="uid://bi2quga825802"]
+
+[ext_resource type="Texture2D" uid="uid://bmkogs5tl25fi" path="res://assets/Science UI/Science UI/clipboard.png" id="1_0el4p"]
+[ext_resource type="Texture2D" uid="uid://c5bdibovkpa1w" path="res://assets/Chromosome_Sheet.png" id="1_or254"]
+[ext_resource type="Script" uid="uid://dac0peyiel6yv" path="res://scripts/guide.gd" id="1_wxloj"]
+[ext_resource type="FontFile" uid="uid://bg2j70d5j31vq" path="res://assets/webfontkit-BoldPixels/boldpixels.ttf" id="3_rb1b7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rb1b7"]
+size = Vector2(64, 256)
+
+[node name="Guide" type="Sprite2D" unique_id=1593570840]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_wxloj")
+
+[node name="Clipboard" type="Sprite2D" parent="." unique_id=1894352725]
+position = Vector2(448, 428)
+rotation = -4.712389
+scale = Vector2(4.5, 4.5)
+texture = ExtResource("1_0el4p")
+metadata/_edit_group_ = true
+
+[node name="Clipboard2" type="Sprite2D" parent="." unique_id=472769990]
+position = Vector2(111.99999, 428)
+rotation = -1.5707964
+scale = Vector2(4.5, 15)
+texture = ExtResource("1_0el4p")
+metadata/_edit_group_ = true
+
+[node name="ChromosomeSheet" type="Sprite2D" parent="." unique_id=1629247189]
+position = Vector2(312, 423)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_or254")
+
+[node name="Label" type="Label" parent="ChromosomeSheet" unique_id=378884619]
+offset_left = -280.0
+offset_top = -183.0
+offset_right = -240.0
+offset_bottom = -160.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="ChromosomeSheet" unique_id=2037697090]
+offset_left = -184.0
+offset_top = -183.0
+offset_right = -144.0
+offset_bottom = -160.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="ChromosomeSheet" unique_id=678169805]
+offset_left = -88.0
+offset_top = -183.0
+offset_right = -48.0
+offset_bottom = -160.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="ChromosomeSheet" unique_id=1455569930]
+offset_left = 136.0
+offset_top = -186.0
+offset_right = 176.0
+offset_bottom = -163.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label5" type="Label" parent="ChromosomeSheet" unique_id=2080651556]
+offset_left = 232.0
+offset_top = -186.0
+offset_right = 272.0
+offset_bottom = -163.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label6" type="Label" parent="ChromosomeSheet" unique_id=280570362]
+offset_left = -280.0
+offset_top = 8.0
+offset_right = -240.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "6"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label7" type="Label" parent="ChromosomeSheet" unique_id=1941608282]
+offset_left = -200.0
+offset_top = 8.0
+offset_right = -160.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "7"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label8" type="Label" parent="ChromosomeSheet" unique_id=176111237]
+offset_left = -112.0
+offset_top = 8.0
+offset_right = -72.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label9" type="Label" parent="ChromosomeSheet" unique_id=248903100]
+offset_left = -40.0
+offset_top = 8.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = " 9"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label10" type="Label" parent="ChromosomeSheet" unique_id=2920968]
+offset_left = 56.0
+offset_top = 8.0
+offset_right = 96.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label11" type="Label" parent="ChromosomeSheet" unique_id=1370943855]
+offset_left = 144.0
+offset_top = 8.0
+offset_right = 184.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = " 11"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label12" type="Label" parent="ChromosomeSheet" unique_id=1073887903]
+offset_left = 232.0
+offset_top = 8.0
+offset_right = 272.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = " 12"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label13" type="Label" parent="ChromosomeSheet" unique_id=192297087]
+offset_left = -280.0
+offset_top = 168.0
+offset_right = -240.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "13"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label14" type="Label" parent="ChromosomeSheet" unique_id=1168155804]
+offset_left = -192.0
+offset_top = 168.0
+offset_right = -152.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = " 14"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label15" type="Label" parent="ChromosomeSheet" unique_id=495677979]
+offset_left = -112.0
+offset_top = 168.0
+offset_right = -72.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = " 15"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label16" type="Label" parent="ChromosomeSheet" unique_id=549083599]
+offset_left = 56.0
+offset_top = 168.0
+offset_right = 96.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "16"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label17" type="Label" parent="ChromosomeSheet" unique_id=1916042666]
+offset_left = 144.0
+offset_top = 168.0
+offset_right = 184.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "17"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label18" type="Label" parent="ChromosomeSheet" unique_id=1773225017]
+offset_left = 232.0
+offset_top = 168.0
+offset_right = 272.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "18"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label19" type="Label" parent="ChromosomeSheet" unique_id=497992310]
+offset_left = -280.0
+offset_top = 352.0
+offset_right = -240.0
+offset_bottom = 375.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = " 19"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label20" type="Label" parent="ChromosomeSheet" unique_id=1612381287]
+offset_left = -192.0
+offset_top = 353.0
+offset_right = -143.0
+offset_bottom = 376.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "  20"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label21" type="Label" parent="ChromosomeSheet" unique_id=124007587]
+offset_left = -32.0
+offset_top = 352.0
+offset_right = 8.0
+offset_bottom = 375.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "21"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label22" type="Label" parent="ChromosomeSheet" unique_id=173719725]
+offset_left = 32.0
+offset_top = 352.0
+offset_right = 72.0
+offset_bottom = 375.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "22"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label23" type="Label" parent="ChromosomeSheet" unique_id=1304922455]
+offset_left = 120.0
+offset_top = 345.0
+offset_right = 211.0
+offset_bottom = 394.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "XX
+(Female)"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label24" type="Label" parent="ChromosomeSheet" unique_id=24695905]
+offset_left = 232.0
+offset_top = 344.0
+offset_right = 299.0
+offset_bottom = 393.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb1b7")
+theme_override_font_sizes/font_size = 26
+text = "XY
+(Male)"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Toggle" type="Area2D" parent="." unique_id=997462948]
+position = Vector2(496, 384)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toggle" unique_id=1962345360]
+position = Vector2(16, 48)
+shape = SubResource("RectangleShape2D_rb1b7")

@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://boand338rvx2s" path="res://assets/Square_Container.tres" id="1_d136o"]
 [ext_resource type="Script" uid="uid://djlfwto2wxspp" path="res://scripts/window.gd" id="2_d136o"]
+[ext_resource type="PackedScene" uid="uid://bi2quga825802" path="res://scenes/guide.tscn" id="3_37vo1"]
 
 [node name="Control" type="Control" unique_id=892762109]
 layout_mode = 3
@@ -23,3 +24,7 @@ mouse_filter = 2
 scale = Vector2(2.25, 2.25)
 texture = ExtResource("1_d136o")
 script = ExtResource("2_d136o")
+guide_node = NodePath("../Guide")
+
+[node name="Guide" parent="." unique_id=1593570840 instance=ExtResource("3_37vo1")]
+position = Vector2(-476, -213)
