@@ -17,6 +17,8 @@
 [ext_resource type="PackedScene" uid="uid://c1biql2hguepm" path="res://scenes/kMachine.tscn" id="13_kvuet"]
 [ext_resource type="Texture2D" uid="uid://cqpp8jw7r7o0s" path="res://assets/computer_Orange.tres" id="14_ca42v"]
 [ext_resource type="Script" uid="uid://caitpgmkx2muw" path="res://scripts/analysis.gd" id="15_rysoc"]
+[ext_resource type="PackedScene" uid="uid://dr86cgy1x32i7" path="res://scenes/clipboard.tscn" id="17_ssvqc"]
+[ext_resource type="PackedScene" uid="uid://baju1mqpmqyaq" path="res://scenes/Report.tscn" id="19_264po"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -563,7 +565,7 @@ scale = Vector2(1.9999995, 1.9999995)
 texture = SubResource("AtlasTexture_1vivr")
 script = ExtResource("11_dinhu")
 
-[node name="Report" type="Sprite2D" parent="." unique_id=1052752392]
+[node name="ReportIcon" type="Sprite2D" parent="." unique_id=1052752392]
 position = Vector2(215, 144)
 scale = Vector2(2.5, 2)
 texture = ExtResource("12_ir15t")
@@ -575,6 +577,10 @@ scale = Vector2(0.5000001, 0.75)
 texture = ExtResource("14_ca42v")
 script = ExtResource("15_rysoc")
 
+[node name="Clipboard" parent="." unique_id=2112990726 instance=ExtResource("17_ssvqc")]
+position = Vector2(-160, -88)
+scale = Vector2(0.5, 0.5)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2104295858]
 
 [node name="PauseMenu" parent="CanvasLayer" unique_id=234955865 instance=ExtResource("8_gee14")]
@@ -582,3 +588,5 @@ offset_left = 48.0
 offset_top = 1.0
 offset_right = 48.0
 offset_bottom = 1.0
+
+[node name="Report" parent="." unique_id=51949720 instance=ExtResource("19_264po")]

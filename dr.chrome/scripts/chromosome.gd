@@ -14,6 +14,7 @@ func _ready() -> void:
 	state_key = "%s_%d" % [chromosome_id, homolog]
 	var tex: Texture2D = load("res://assets/Chromosomes/%s.tres" % chromosome_id)
 	sprite.texture = tex
+	sprite.flip_h = (homolog == 2)
 	var new_shape := RectangleShape2D.new()
 	new_shape.size = tex.get_size()
 	collision.shape = new_shape
