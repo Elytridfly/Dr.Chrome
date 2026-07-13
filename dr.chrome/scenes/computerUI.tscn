@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://boand338rvx2s" path="res://assets/Square_Container.tres" id="1_d136o"]
 [ext_resource type="Script" uid="uid://djlfwto2wxspp" path="res://scripts/window.gd" id="2_d136o"]
 [ext_resource type="PackedScene" uid="uid://bi2quga825802" path="res://scenes/guide.tscn" id="3_37vo1"]
+[ext_resource type="PackedScene" uid="uid://dr86cgy1x32i7" path="res://scenes/clipboard.tscn" id="4_n87dj"]
 
 [node name="Control" type="Control" unique_id=892762109]
 layout_mode = 3
@@ -28,3 +29,7 @@ guide_node = NodePath("../Guide")
 
 [node name="Guide" parent="." unique_id=1593570840 instance=ExtResource("3_37vo1")]
 position = Vector2(-476, -213)
+
+[node name="Clipboard" parent="." unique_id=2112990726 instance=ExtResource("4_n87dj")]
+position = Vector2(244, -117)
+scale = Vector2(0.5, 0.5)

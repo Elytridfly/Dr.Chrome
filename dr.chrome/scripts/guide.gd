@@ -1,6 +1,6 @@
 extends Sprite2D
 
-@export var hover_offset: Vector2 = Vector2(-15, 0)
+@export var hover_offset: Vector2 = Vector2(-10, 0)
 @export var open_offset: Vector2 = Vector2(300, 0)
 @export var slide_duration: float = 0.25
 

@@ -10,6 +10,9 @@ var analysis: bool = false
 var report: bool = false
 var have_sex := false
 
+var current_patient: int = 1
+
+
 var karyotype_state := {}
 var active_interactable: Node = null
 var selected_chromosome: Node = null

@@ -32,6 +32,9 @@ size = Vector2(64, 272)
 
 [node name="Clipboard" type="Sprite2D" unique_id=2112990726]
 script = ExtResource("1_72r3v")
+hover_offset = null
+open_offset = null
+slide_duration = null
 
 [node name="bottom" type="Sprite2D" parent="." unique_id=1869020229]
 position = Vector2(126.81818, 247.99998)

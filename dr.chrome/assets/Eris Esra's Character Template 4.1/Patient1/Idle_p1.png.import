@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5eccthm3iqs0"
-path="res://.godot/imported/16x32 Attack-Sheet.png-eaea5e5bae8379891ac47276a1f80853.ctex"
+uid="uid://br1xq70o6d53p"
+path="res://.godot/imported/Idle_p1.png-b13ac32471311d9bac77dc52cd3f0762.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Eris Esra's Character Template 4.1/16x32/16x32 Attack-Sheet.png"
-dest_files=["res://.godot/imported/16x32 Attack-Sheet.png-eaea5e5bae8379891ac47276a1f80853.ctex"]
+source_file="res://assets/Eris Esra's Character Template 4.1/Patient1/Idle_p1.png"
+dest_files=["res://.godot/imported/Idle_p1.png-b13ac32471311d9bac77dc52cd3f0762.ctex"]
 
 [params]
 

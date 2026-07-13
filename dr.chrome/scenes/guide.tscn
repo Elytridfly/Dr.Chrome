@@ -20,9 +20,9 @@ texture = ExtResource("1_0el4p")
 metadata/_edit_group_ = true
 
 [node name="Clipboard2" type="Sprite2D" parent="." unique_id=472769990]
-position = Vector2(111.99999, 428)
+position = Vector2(-143.14221, 428)
 rotation = -1.5707964
-scale = Vector2(4.5, 15)
+scale = Vector2(4.5, 29.174562)
 texture = ExtResource("1_0el4p")
 metadata/_edit_group_ = true
 

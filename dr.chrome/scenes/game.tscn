@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://ckgfywth646du" path="res://scenes/computer.tscn" id="8_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://8kvu0untjq7k" path="res://scenes/pause_menu.tscn" id="8_gee14"]
 [ext_resource type="PackedScene" uid="uid://xp66tku42axo" path="res://scenes/computerUI.tscn" id="8_vtaks"]
-[ext_resource type="PackedScene" uid="uid://ch3spfngycx3u" path="res://scenes/patient.tscn" id="9_vtaks"]
+[ext_resource type="PackedScene" uid="uid://ch3spfngycx3u" path="res://scenes/patient1.tscn" id="9_vtaks"]
 [ext_resource type="Texture2D" uid="uid://cipvtdphkmch4" path="res://assets/Red Potions/Red Potions/poç╞o vermelha.png" id="10_kvpfn"]
 [ext_resource type="Script" uid="uid://cu07pc8l6mtya" path="res://scripts/Blood.gd" id="11_dinhu"]
 [ext_resource type="Texture2D" uid="uid://cjaroil3v2po5" path="res://assets/things of paper/things of paper/papers/Capa 72.png" id="12_ir15t"]
@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://cqpp8jw7r7o0s" path="res://assets/computer_Orange.tres" id="14_ca42v"]
 [ext_resource type="Script" uid="uid://caitpgmkx2muw" path="res://scripts/analysis.gd" id="15_rysoc"]
 [ext_resource type="PackedScene" uid="uid://dr86cgy1x32i7" path="res://scenes/clipboard.tscn" id="17_ssvqc"]
-[ext_resource type="PackedScene" uid="uid://baju1mqpmqyaq" path="res://scenes/Report.tscn" id="19_264po"]
+[ext_resource type="PackedScene" uid="uid://baju1mqpmqyaq" path="res://scenes/report-normal.tscn" id="19_264po"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -545,7 +545,7 @@ process_mode = 3
 position = Vector2(-82, -45)
 ui_scene = ExtResource("8_vtaks")
 
-[node name="Patient" parent="." unique_id=1886844576 instance=ExtResource("9_vtaks")]
+[node name="Patient1" parent="." unique_id=1886844576 instance=ExtResource("9_vtaks")]
 position = Vector2(-168, -16)
 target_marker = NodePath("../Chair")
 target_marker_2 = NodePath("../Door")
@@ -578,6 +578,7 @@ texture = ExtResource("14_ca42v")
 script = ExtResource("15_rysoc")
 
 [node name="Clipboard" parent="." unique_id=2112990726 instance=ExtResource("17_ssvqc")]
+visible = false
 position = Vector2(-160, -88)
 scale = Vector2(0.5, 0.5)
 
@@ -590,3 +591,4 @@ offset_right = 48.0
 offset_bottom = 1.0
 
 [node name="Report" parent="." unique_id=51949720 instance=ExtResource("19_264po")]
+visible = false

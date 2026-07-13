@@ -35,7 +35,7 @@ func _close_ui() -> void:
 	ui_instance = null
 	GameState.ui_blocking_input = false
 	GameState.active_interactable = null
-	GameState.report_ready()
+
 
 func _unhandled_input(event: InputEvent) -> void:
 	super._unhandled_input(event)
