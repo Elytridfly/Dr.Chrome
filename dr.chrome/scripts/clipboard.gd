@@ -1,6 +1,4 @@
-# clipboard.gd
 extends Sprite2D
-
 @onready var is_male: CheckBox = $isMale
 @onready var is_female: CheckBox = $isFemale
 @onready var toggle_area: Area2D = $Toggle
@@ -9,11 +7,9 @@ extends Sprite2D
 @onready var patient_sprite: AnimatedSprite2D = $patientSprite
 @onready var count_value: LineEdit = $countValue
 @onready var abnormality_id: LineEdit = $abnormalityId
-
-@export var hover_offset: Vector2 = Vector2(10, 0)   
-@export var open_offset: Vector2 = Vector2(-300, 0)  
+@export var hover_offset: Vector2 = Vector2(10, 0)
+@export var open_offset: Vector2 = Vector2(-300, 0)
 @export var slide_duration: float = 0.25
-
 var base_position: Vector2
 var is_open := false
 var is_hovering := false
@@ -25,8 +21,6 @@ func _ready() -> void:
 	toggle_area.mouse_exited.connect(_on_mouse_exited)
 	toggle_area.input_event.connect(_on_toggle_input_event)
 	submit_button.pressed.connect(_on_submit_pressed)
-	_set_current_date()
-	_setup_patient_sprite()
 	call_deferred("move_to_front")
 
 func _on_mouse_entered() -> void:
@@ -44,9 +38,18 @@ func _on_toggle_input_event(_viewport, event, _shape_idx) -> void:
 		is_open = not is_open
 		if is_open:
 			_slide_to(base_position + open_offset)
+			_refresh_for_current_patient()
 		else:
 			_slide_to(base_position + (hover_offset if is_hovering else Vector2.ZERO))
 		get_viewport().set_input_as_handled()
+
+func _refresh_for_current_patient() -> void:
+	_set_current_date()
+	_setup_patient_sprite()
+	is_male.button_pressed = false
+	is_female.button_pressed = false
+	count_value.text = ""
+	abnormality_id.text = ""
 
 func _slide_to(target: Vector2) -> void:
 	if tween:
@@ -86,7 +89,7 @@ func _on_submit_pressed() -> void:
 	patient_data.answerSex = is_male.button_pressed
 	patient_data.answerCount = int(count_value.text)
 	patient_data.answerAbnormality = int(abnormality_id.text)
-	var result :int = patient_data.score()
+	var result: int = patient_data.score()
 	print("Score for patient %d: %d/3" % [GameState.current_patient, result])  # TODO: do something with result besides print
 	GameState.report_ready()
 	if GameState.active_interactable:
@@ -95,8 +98,8 @@ func _on_submit_pressed() -> void:
 func _get_patient_data(patient_num: int):
 	match patient_num:
 		1: return Patient1Data.new()
-		#2: return Patient2Data.new()  # TODO: create once you've built this file
-		#3: return Patient3Data.new()  # TODO: create once you've built this file
+		2: return Patient2Data.new()
+		3: return Patient3Data.new()
 		_: return null
 
 func _set_current_date() -> void:

@@ -10,7 +10,9 @@
 [ext_resource type="PackedScene" uid="uid://8kvu0untjq7k" path="res://scenes/pause_menu.tscn" id="8_gee14"]
 [ext_resource type="PackedScene" uid="uid://xp66tku42axo" path="res://scenes/computerUI.tscn" id="8_vtaks"]
 [ext_resource type="PackedScene" uid="uid://ch3spfngycx3u" path="res://scenes/patient1.tscn" id="9_vtaks"]
+[ext_resource type="PackedScene" uid="uid://b5q6maqtyq3n8" path="res://scenes/patient2.tscn" id="10_5newe"]
 [ext_resource type="Texture2D" uid="uid://cipvtdphkmch4" path="res://assets/Red Potions/Red Potions/poç╞o vermelha.png" id="10_kvpfn"]
+[ext_resource type="PackedScene" uid="uid://bvtlx5ay8d5dk" path="res://scenes/patient3.tscn" id="11_37s47"]
 [ext_resource type="Script" uid="uid://cu07pc8l6mtya" path="res://scripts/Blood.gd" id="11_dinhu"]
 [ext_resource type="Texture2D" uid="uid://cjaroil3v2po5" path="res://assets/things of paper/things of paper/papers/Capa 72.png" id="12_ir15t"]
 [ext_resource type="Script" uid="uid://4c8djfl4noe5" path="res://scripts/report.gd" id="12_trtic"]
@@ -549,6 +551,20 @@ ui_scene = ExtResource("8_vtaks")
 position = Vector2(-168, -16)
 target_marker = NodePath("../Chair")
 target_marker_2 = NodePath("../Door")
+
+[node name="Patient2" parent="." unique_id=1403241044 instance=ExtResource("10_5newe")]
+visible = false
+position = Vector2(-168, -16)
+target_marker = NodePath("../Chair")
+target_marker_2 = NodePath("../Door")
+patient_number = 2
+
+[node name="Patient3" parent="." unique_id=1663071186 instance=ExtResource("11_37s47")]
+visible = false
+position = Vector2(-168, -16)
+target_marker = NodePath("../Chair")
+target_marker_2 = NodePath("../Door")
+patient_number = 3
 
 [node name="KMachine" parent="." unique_id=1371978686 instance=ExtResource("13_kvuet")]
 position = Vector2(-8, -40)

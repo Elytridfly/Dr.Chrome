@@ -3,6 +3,7 @@ extends Node
 signal blood_changed(value: bool)
 signal analysis_changed(value: bool)
 signal report_changed(value: bool)
+signal patient_changed(new_patient: int)
 
 var ui_blocking_input: bool = false
 var blood: bool = false
@@ -20,6 +21,20 @@ var selected_chromosome: Node = null
 enum Sex{MALE, FEMALE}
 
 var patient_sex: int = Sex.MALE
+
+func advance_patient() -> void:
+	current_patient += 1
+	karyotype_state.clear()
+	patient_changed.emit(current_patient)
+	
+
+func get_current_patient_is_male() -> bool:
+	match current_patient:
+		1: return Patient1Data.CORRECT_SEX
+		2: return Patient2Data.CORRECT_SEX
+		3: return Patient3Data.CORRECT_SEX
+		_: return true
+
 
 func determine_sex() -> void:
 	if have_sex:

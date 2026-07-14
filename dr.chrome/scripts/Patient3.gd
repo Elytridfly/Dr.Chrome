@@ -1,7 +1,7 @@
 extends Resource
 class_name Patient3Data
 
-var answerSex: bool = false
+var answerSex: bool = true
 var answerCount: int = 0
 var answerAbnormality: int = 0
 
