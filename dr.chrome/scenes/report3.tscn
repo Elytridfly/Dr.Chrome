@@ -1,0 +1,509 @@
+[gd_scene format=3 uid="uid://cp2rptyxg1xns"]
+
+[ext_resource type="Texture2D" uid="uid://suk5y061oysh" path="res://assets/things of paper/things of paper/papers/tile set/PTS (5).png" id="1_l1b3s"]
+[ext_resource type="Texture2D" uid="uid://cjfs1yuqyv5rp" path="res://assets/things of paper/things of paper/papers/tile set/PTS (6).png" id="2_8maip"]
+[ext_resource type="Texture2D" uid="uid://h8yheya88xdb" path="res://assets/things of paper/things of paper/papers/tile set/pixil-layer-Background.png" id="3_5v6eu"]
+[ext_resource type="FontFile" uid="uid://bg2j70d5j31vq" path="res://assets/webfontkit-BoldPixels/boldpixels.ttf" id="4_hfdxr"]
+[ext_resource type="Texture2D" uid="uid://boand338rvx2s" path="res://assets/Square_Container.tres" id="5_8m172"]
+[ext_resource type="Texture2D" uid="uid://coly7dpja4vq0" path="res://assets/report_sheet3.png" id="6_l1b3s"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7fwct"]
+texture = ExtResource("1_l1b3s")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p455r"]
+texture = ExtResource("2_8maip")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n6tbu"]
+texture = ExtResource("3_5v6eu")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_v5gy4"]
+sources/5 = SubResource("TileSetAtlasSource_7fwct")
+sources/6 = SubResource("TileSetAtlasSource_p455r")
+sources/7 = SubResource("TileSetAtlasSource_n6tbu")
+
+[node name="Report" type="Sprite2D" unique_id=51949720]
+
+[node name="Paper" type="TileMap" parent="." unique_id=1643635931]
+tile_set = SubResource("TileSet_v5gy4")
+format = 2
+layer_0/tile_data = PackedInt32Array(1, 5, 805306368, 2, 5, 805306368, 3, 5, 805306368, 4, 5, 805306368, 5, 5, 805306368, 6, 5, 805306368, 7, 5, 805306368, 8, 5, 805306368, 9, 5, 805306368, 10, 5, 805306368, 11, 5, 805306368, 12, 5, 805306368, 13, 5, 805306368, 14, 5, 805306368, 15, 5, 805306368, 16, 5, 805306368, 17, 5, 805306368, 18, 5, 805306368, 19, 5, 805306368, 65536, 5, 1342177280, 131072, 5, 1342177280, 196608, 5, 1342177280, 262144, 5, 1342177280, 327680, 5, 1342177280, 393216, 5, 1342177280, 458752, 5, 1342177280, 524288, 5, 1342177280, 589824, 5, 1342177280, 655360, 5, 1342177280, 720896, 5, 1342177280, 786432, 5, 1342177280, 851968, 5, 1342177280, 917504, 5, 1342177280, 983040, 5, 1342177280, 1048576, 5, 1342177280, 1114112, 5, 1342177280, 1179648, 5, 1342177280, 1245184, 5, 1342177280, 1310720, 5, 1342177280, 1376256, 5, 1342177280, 1441792, 5, 1342177280, 1507328, 5, 1342177280, 1572864, 5, 1342177280, 1638400, 5, 1342177280, 1703936, 5, 1342177280, 1769472, 5, 1342177280, 1835008, 5, 1342177280, 1900544, 5, 1342177280, 1966099, 5, 0, 1966098, 5, 0, 1966097, 5, 0, 1966096, 5, 0, 1966095, 5, 0, 1966094, 5, 0, 1966093, 5, 0, 1966092, 5, 0, 1966091, 5, 0, 1966090, 5, 0, 1966089, 5, 0, 1966088, 5, 0, 1966087, 5, 0, 1966086, 5, 0, 1966085, 5, 0, 1966084, 5, 0, 1966083, 5, 0, 1966082, 5, 0, 1966081, 5, 0, 1900564, 5, 1610612736, 1835028, 5, 1610612736, 1769492, 5, 1610612736, 1703956, 5, 1610612736, 1638420, 5, 1610612736, 1572884, 5, 1610612736, 1507348, 5, 1610612736, 1441812, 5, 1610612736, 1376276, 5, 1610612736, 1310740, 5, 1610612736, 1245204, 5, 1610612736, 1179668, 5, 1610612736, 1114132, 5, 1610612736, 1048596, 5, 1610612736, 983060, 5, 1610612736, 917524, 5, 1610612736, 851988, 5, 1610612736, 786452, 5, 1610612736, 65556, 5, 1610612736, 131092, 5, 1610612736, 196628, 5, 1610612736, 262164, 5, 1610612736, 327700, 5, 1610612736, 393236, 5, 1610612736, 458772, 5, 1610612736, 524308, 5, 1610612736, 589844, 5, 1610612736, 655380, 5, 1610612736, 720916, 5, 1610612736, 720905, 6, 0, 655369, 6, 0, 589833, 6, 0, 524297, 6, 0, 458761, 6, 0, 393225, 6, 0, 327689, 6, 0, 262153, 6, 0, 196617, 6, 0, 131081, 6, 0, 65545, 6, 0, 65544, 6, 0, 65543, 6, 0, 65542, 6, 0, 65541, 6, 0, 65540, 6, 0, 65539, 6, 0, 65538, 6, 0, 65537, 6, 0, 131073, 6, 0, 196609, 6, 0, 262145, 6, 0, 327681, 6, 0, 393217, 6, 0, 458753, 6, 0, 524289, 6, 0, 589825, 6, 0, 655361, 6, 0, 720897, 6, 0, 786433, 6, 0, 851969, 6, 0, 917505, 6, 0, 983041, 6, 0, 1048577, 6, 0, 1114113, 6, 0, 1179649, 6, 0, 1245185, 6, 0, 1310721, 6, 0, 1376257, 6, 0, 1441793, 6, 0, 1507329, 6, 0, 1572865, 6, 0, 1638401, 6, 0, 1703937, 6, 0, 1769473, 6, 0, 1835009, 6, 0, 1900545, 6, 0, 1900546, 6, 0, 1835010, 6, 0, 1769474, 6, 0, 1703938, 6, 0, 1638402, 6, 0, 1572866, 6, 0, 1507330, 6, 0, 1441794, 6, 0, 1376258, 6, 0, 1310722, 6, 0, 1245186, 6, 0, 1179650, 6, 0, 1114114, 6, 0, 1048578, 6, 0, 983042, 6, 0, 917506, 6, 0, 851970, 6, 0, 786434, 6, 0, 720898, 6, 0, 655362, 6, 0, 589826, 6, 0, 524290, 6, 0, 458754, 6, 0, 393218, 6, 0, 327682, 6, 0, 262146, 6, 0, 196610, 6, 0, 131074, 6, 0, 131075, 6, 0, 196611, 6, 0, 262147, 6, 0, 327683, 6, 0, 393219, 6, 0, 458755, 6, 0, 524291, 6, 0, 589827, 6, 0, 655363, 6, 0, 720899, 6, 0, 786435, 6, 0, 851971, 6, 0, 917507, 6, 0, 983043, 6, 0, 1048579, 6, 0, 1114115, 6, 0, 1179651, 6, 0, 1245187, 6, 0, 1310723, 6, 0, 1376259, 6, 0, 1441795, 6, 0, 1507331, 6, 0, 1572867, 6, 0, 1638403, 6, 0, 1703939, 6, 0, 1769475, 6, 0, 1835011, 6, 0, 1900547, 6, 0, 1900548, 6, 0, 1835012, 6, 0, 1769476, 6, 0, 1703940, 6, 0, 1638404, 6, 0, 1572868, 6, 0, 1507332, 6, 0, 1441796, 6, 0, 1376260, 6, 0, 1310724, 6, 0, 1245188, 6, 0, 1179652, 6, 0, 1114116, 6, 0, 1048580, 6, 0, 983044, 6, 0, 917508, 6, 0, 851972, 6, 0, 786436, 6, 0, 720900, 6, 0, 655364, 6, 0, 589828, 6, 0, 524292, 6, 0, 458756, 6, 0, 393220, 6, 0, 327684, 6, 0, 262148, 6, 0, 196612, 6, 0, 131076, 6, 0, 131077, 6, 0, 196613, 6, 0, 262149, 6, 0, 327685, 6, 0, 393221, 6, 0, 458757, 6, 0, 524293, 6, 0, 589829, 6, 0, 655365, 6, 0, 720901, 6, 0, 786437, 6, 0, 851973, 6, 0, 917509, 6, 0, 983045, 6, 0, 1048581, 6, 0, 1114117, 6, 0, 1179653, 6, 0, 1245189, 6, 0, 1310725, 6, 0, 1376261, 6, 0, 1441797, 6, 0, 1507333, 6, 0, 1572869, 6, 0, 1638405, 6, 0, 1703941, 6, 0, 1769477, 6, 0, 1835013, 6, 0, 1900549, 6, 0, 1900550, 6, 0, 1835014, 6, 0, 1769478, 6, 0, 1703942, 6, 0, 1638406, 6, 0, 1572870, 6, 0, 1507334, 6, 0, 1441798, 6, 0, 1376262, 6, 0, 1310726, 6, 0, 1245190, 6, 0, 1179654, 6, 0, 1114118, 6, 0, 1048582, 6, 0, 983046, 6, 0, 917510, 6, 0, 851974, 6, 0, 786438, 6, 0, 720902, 6, 0, 655366, 6, 0, 589830, 6, 0, 524294, 6, 0, 458758, 6, 0, 393222, 6, 0, 327686, 6, 0, 262150, 6, 0, 196614, 6, 0, 131078, 6, 0, 131079, 6, 0, 196615, 6, 0, 262151, 6, 0, 327687, 6, 0, 393223, 6, 0, 458759, 6, 0, 524295, 6, 0, 589831, 6, 0, 655367, 6, 0, 720903, 6, 0, 786439, 6, 0, 851975, 6, 0, 917511, 6, 0, 983047, 6, 0, 1048583, 6, 0, 1114119, 6, 0, 1179655, 6, 0, 1245191, 6, 0, 1310727, 6, 0, 1376263, 6, 0, 1441799, 6, 0, 1507335, 6, 0, 1572871, 6, 0, 1638407, 6, 0, 1703943, 6, 0, 1769479, 6, 0, 1835015, 6, 0, 1900551, 6, 0, 1900552, 6, 0, 1835016, 6, 0, 1769480, 6, 0, 1703944, 6, 0, 1638408, 6, 0, 1572872, 6, 0, 1507336, 6, 0, 1441800, 6, 0, 1376264, 6, 0, 1310728, 6, 0, 1245192, 6, 0, 1179656, 6, 0, 1114120, 6, 0, 1048584, 6, 0, 983048, 6, 0, 917512, 6, 0, 851976, 6, 0, 786440, 6, 0, 720904, 6, 0, 655368, 6, 0, 589832, 6, 0, 524296, 6, 0, 458760, 6, 0, 393224, 6, 0, 327688, 6, 0, 262152, 6, 0, 196616, 6, 0, 131080, 6, 0, 786441, 6, 0, 851977, 6, 0, 917513, 6, 0, 983049, 6, 0, 1048585, 6, 0, 1114121, 6, 0, 1179657, 6, 0, 1245193, 6, 0, 1310729, 6, 0, 1376265, 6, 0, 1441801, 6, 0, 1507337, 6, 0, 1572873, 6, 0, 1638409, 6, 0, 1703945, 6, 0, 1769481, 6, 0, 1835017, 6, 0, 1900553, 6, 0, 1900554, 6, 0, 1835018, 6, 0, 1769482, 6, 0, 1703946, 6, 0, 1638410, 6, 0, 1572874, 6, 0, 1507338, 6, 0, 1441802, 6, 0, 1376266, 6, 0, 1310730, 6, 0, 1245194, 6, 0, 1179658, 6, 0, 1114122, 6, 0, 1048586, 6, 0, 983050, 6, 0, 917514, 6, 0, 851978, 6, 0, 786442, 6, 0, 720906, 6, 0, 655370, 6, 0, 589834, 6, 0, 524298, 6, 0, 458762, 6, 0, 393226, 6, 0, 327690, 6, 0, 262154, 6, 0, 196618, 6, 0, 131082, 6, 0, 65546, 6, 0, 65547, 6, 0, 131083, 6, 0, 196619, 6, 0, 262155, 6, 0, 327691, 6, 0, 393227, 6, 0, 458763, 6, 0, 524299, 6, 0, 589835, 6, 0, 655371, 6, 0, 720907, 6, 0, 786443, 6, 0, 851979, 6, 0, 917515, 6, 0, 983051, 6, 0, 1048587, 6, 0, 1114123, 6, 0, 1179659, 6, 0, 1245195, 6, 0, 1310731, 6, 0, 1376267, 6, 0, 1441803, 6, 0, 1507339, 6, 0, 1572875, 6, 0, 1638411, 6, 0, 1703947, 6, 0, 1769483, 6, 0, 1835019, 6, 0, 1900555, 6, 0, 1900556, 6, 0, 1835020, 6, 0, 1769484, 6, 0, 1703948, 6, 0, 1638412, 6, 0, 1572876, 6, 0, 1507340, 6, 0, 1441804, 6, 0, 1376268, 6, 0, 1310732, 6, 0, 1245196, 6, 0, 1179660, 6, 0, 1114124, 6, 0, 1048588, 6, 0, 983052, 6, 0, 917516, 6, 0, 851980, 6, 0, 786444, 6, 0, 720908, 6, 0, 655372, 6, 0, 589836, 6, 0, 524300, 6, 0, 458764, 6, 0, 393228, 6, 0, 327692, 6, 0, 262156, 6, 0, 196620, 6, 0, 131084, 6, 0, 65548, 6, 0, 65549, 6, 0, 131085, 6, 0, 196621, 6, 0, 262157, 6, 0, 327693, 6, 0, 393229, 6, 0, 458765, 6, 0, 524301, 6, 0, 589837, 6, 0, 655373, 6, 0, 720909, 6, 0, 786445, 6, 0, 851981, 6, 0, 917517, 6, 0, 983053, 6, 0, 1048589, 6, 0, 1114125, 6, 0, 1179661, 6, 0, 1245197, 6, 0, 1310733, 6, 0, 1376269, 6, 0, 1441805, 6, 0, 1507341, 6, 0, 1572877, 6, 0, 1638413, 6, 0, 1703949, 6, 0, 1769485, 6, 0, 1835021, 6, 0, 1900557, 6, 0, 1900558, 6, 0, 1835022, 6, 0, 1769486, 6, 0, 1703950, 6, 0, 1638414, 6, 0, 1572878, 6, 0, 1507342, 6, 0, 1441806, 6, 0, 1376270, 6, 0, 1310734, 6, 0, 1245198, 6, 0, 1179662, 6, 0, 1114126, 6, 0, 1048590, 6, 0, 983054, 6, 0, 917518, 6, 0, 851982, 6, 0, 786446, 6, 0, 720910, 6, 0, 655374, 6, 0, 589838, 6, 0, 524302, 6, 0, 458766, 6, 0, 393230, 6, 0, 327694, 6, 0, 262158, 6, 0, 196622, 6, 0, 131086, 6, 0, 65550, 6, 0, 65551, 6, 0, 131087, 6, 0, 196623, 6, 0, 262159, 6, 0, 327695, 6, 0, 393231, 6, 0, 458767, 6, 0, 524303, 6, 0, 589839, 6, 0, 655375, 6, 0, 720911, 6, 0, 786447, 6, 0, 851983, 6, 0, 917519, 6, 0, 983055, 6, 0, 1048591, 6, 0, 1114127, 6, 0, 1179663, 6, 0, 1245199, 6, 0, 1310735, 6, 0, 1376271, 6, 0, 1441807, 6, 0, 1507343, 6, 0, 1572879, 6, 0, 1638415, 6, 0, 1703951, 6, 0, 1769487, 6, 0, 1835023, 6, 0, 1900559, 6, 0, 1900560, 6, 0, 1835024, 6, 0, 1769488, 6, 0, 1703952, 6, 0, 1638416, 6, 0, 1572880, 6, 0, 1507344, 6, 0, 1441808, 6, 0, 1376272, 6, 0, 1310736, 6, 0, 1245200, 6, 0, 1179664, 6, 0, 1114128, 6, 0, 1048592, 6, 0, 983056, 6, 0, 917520, 6, 0, 851984, 6, 0, 786448, 6, 0, 720912, 6, 0, 655376, 6, 0, 589840, 6, 0, 524304, 6, 0, 458768, 6, 0, 393232, 6, 0, 327696, 6, 0, 262160, 6, 0, 196624, 6, 0, 131088, 6, 0, 65552, 6, 0, 65553, 6, 0, 131089, 6, 0, 196625, 6, 0, 262161, 6, 0, 327697, 6, 0, 393233, 6, 0, 458769, 6, 0, 524305, 6, 0, 589841, 6, 0, 655377, 6, 0, 720913, 6, 0, 786449, 6, 0, 851985, 6, 0, 917521, 6, 0, 983057, 6, 0, 1048593, 6, 0, 1114129, 6, 0, 1179665, 6, 0, 1245201, 6, 0, 1310737, 6, 0, 1376273, 6, 0, 1441809, 6, 0, 1507345, 6, 0, 1572881, 6, 0, 1638417, 6, 0, 1703953, 6, 0, 1769489, 6, 0, 1835025, 6, 0, 1900561, 6, 0, 1900562, 6, 0, 1835026, 6, 0, 1769490, 6, 0, 1703954, 6, 0, 1638418, 6, 0, 1572882, 6, 0, 1507346, 6, 0, 1441810, 6, 0, 1376274, 6, 0, 1310738, 6, 0, 1245202, 6, 0, 1179666, 6, 0, 1114130, 6, 0, 1048594, 6, 0, 983058, 6, 0, 917522, 6, 0, 851986, 6, 0, 786450, 6, 0, 720914, 6, 0, 655378, 6, 0, 589842, 6, 0, 524306, 6, 0, 458770, 6, 0, 393234, 6, 0, 327698, 6, 0, 262162, 6, 0, 196626, 6, 0, 131090, 6, 0, 65554, 6, 0, 65555, 6, 0, 131091, 6, 0, 196627, 6, 0, 262163, 6, 0, 327699, 6, 0, 393235, 6, 0, 458771, 6, 0, 524307, 6, 0, 589843, 6, 0, 655379, 6, 0, 720915, 6, 0, 786451, 6, 0, 851987, 6, 0, 917523, 6, 0, 983059, 6, 0, 1048595, 6, 0, 1114131, 6, 0, 1179667, 6, 0, 1245203, 6, 0, 1310739, 6, 0, 1376275, 6, 0, 1441811, 6, 0, 1507347, 6, 0, 1572883, 6, 0, 1638419, 6, 0, 1703955, 6, 0, 1769491, 6, 0, 1835027, 6, 0, 1900563, 6, 0, 1966080, 7, 0, 0, 7, 1342177280, 20, 7, 805306368, 1966100, 7, 1610612736)
+
+[node name="title" type="Label" parent="." unique_id=1469961926]
+offset_left = 56.0
+offset_top = 8.0
+offset_right = 236.0
+offset_bottom = 31.0
+pivot_offset = Vector2(96, 24)
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 14
+text = "Chromosome Analysis Report : "
+metadata/_edit_use_anchors_ = true
+
+[node name="reportId" type="Label" parent="." unique_id=143545577]
+offset_left = 236.0
+offset_top = 8.0
+offset_right = 276.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 14
+text = "XXXXX"
+metadata/_edit_use_anchors_ = true
+
+[node name="div" type="Label" parent="." unique_id=1090541099]
+offset_left = 1.0
+offset_top = 24.0
+offset_right = 336.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 14
+text = "----------------------------------------"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="date" type="Label" parent="." unique_id=1346058664]
+offset_left = 16.0
+offset_top = 40.0
+offset_right = 48.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Date:"
+metadata/_edit_use_anchors_ = true
+
+[node name="dateValue" type="Label" parent="." unique_id=491044145]
+offset_left = 48.0
+offset_top = 40.0
+offset_right = 113.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "14/07/2026"
+metadata/_edit_use_anchors_ = true
+
+[node name="cellLine" type="Label" parent="." unique_id=71698968]
+offset_left = 16.0
+offset_top = 52.0
+offset_right = 68.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Cell Line:"
+metadata/_edit_use_anchors_ = true
+
+[node name="cellLineValue" type="Label" parent="." unique_id=1391772932]
+offset_left = 72.0
+offset_top = 52.0
+offset_right = 145.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Sample Report"
+metadata/_edit_use_anchors_ = true
+
+[node name="submitted" type="Label" parent="." unique_id=1053447332]
+offset_left = 16.0
+offset_top = 64.0
+offset_right = 123.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Submitted Passage #:"
+metadata/_edit_use_anchors_ = true
+
+[node name="submittedValue" type="Label" parent="." unique_id=1427456208]
+offset_left = 128.0
+offset_top = 64.0
+offset_right = 142.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "6"
+metadata/_edit_use_anchors_ = true
+
+[node name="sampleDate" type="Label" parent="." unique_id=1556032608]
+offset_left = 16.0
+offset_top = 76.0
+offset_right = 80.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Sample Date:"
+metadata/_edit_use_anchors_ = true
+
+[node name="sampleDateValue" type="Label" parent="." unique_id=1448338138]
+offset_left = 88.0
+offset_top = 76.0
+offset_right = 153.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "10/07/2026"
+metadata/_edit_use_anchors_ = true
+
+[node name="speciment" type="Label" parent="." unique_id=648028796]
+offset_left = 16.0
+offset_top = 88.0
+offset_right = 72.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Speciment:"
+metadata/_edit_use_anchors_ = true
+
+[node name="specimentValue" type="Label" parent="." unique_id=217707275]
+offset_left = 72.0
+offset_top = 88.0
+offset_right = 137.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Human IPSC"
+metadata/_edit_use_anchors_ = true
+
+[node name="result" type="Label" parent="." unique_id=405958422]
+offset_left = 16.0
+offset_top = 100.0
+offset_right = 72.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Results:"
+metadata/_edit_use_anchors_ = true
+
+[node name="resultValue" type="Label" parent="." unique_id=1556571642]
+offset_left = 72.0
+offset_top = 100.0
+offset_right = 88.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "46,"
+metadata/_edit_use_anchors_ = true
+
+[node name="resultSex" type="Label" parent="." unique_id=549959717]
+offset_left = 98.0
+offset_top = 100.0
+offset_right = 112.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "XX"
+metadata/_edit_use_anchors_ = true
+
+[node name="reason" type="Label" parent="." unique_id=827659919]
+offset_left = 176.0
+offset_top = 52.0
+offset_right = 274.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Reason for Testing:"
+metadata/_edit_use_anchors_ = true
+
+[node name="reasonValue" type="Label" parent="." unique_id=509602205]
+offset_left = 280.0
+offset_top = 52.0
+offset_right = 297.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Fun"
+metadata/_edit_use_anchors_ = true
+
+[node name="sex" type="Label" parent="." unique_id=255072133]
+offset_left = 176.0
+offset_top = 40.0
+offset_right = 250.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Cell Line Sex:"
+metadata/_edit_use_anchors_ = true
+
+[node name="sexValue" type="Label" parent="." unique_id=1055564096]
+offset_left = 256.0
+offset_top = 40.0
+offset_right = 264.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "X"
+metadata/_edit_use_anchors_ = true
+
+[node name="investigator" type="Label" parent="." unique_id=322999062]
+offset_left = 176.0
+offset_top = 76.0
+offset_right = 243.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Investigator:"
+metadata/_edit_use_anchors_ = true
+
+[node name="investigatorValue" type="Label" parent="." unique_id=1596084777]
+offset_left = 250.0
+offset_top = 76.0
+offset_right = 317.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Dr. Chrome"
+metadata/_edit_use_anchors_ = true
+
+[node name="cell" type="Label" parent="." unique_id=1963562356]
+offset_left = 184.0
+offset_top = 168.00002
+offset_right = 216.0
+offset_bottom = 180.00002
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Cell:"
+metadata/_edit_use_anchors_ = true
+
+[node name="cellValue" type="Label" parent="." unique_id=907461563]
+offset_left = 216.0
+offset_top = 168.0
+offset_right = 224.0
+offset_bottom = 180.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "9"
+metadata/_edit_use_anchors_ = true
+
+[node name="slide" type="Label" parent="." unique_id=1293854894]
+offset_left = 184.0
+offset_top = 177.6
+offset_right = 224.0
+offset_bottom = 189.6
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Slide:"
+metadata/_edit_use_anchors_ = true
+
+[node name="slideValue" type="Label" parent="." unique_id=111839608]
+offset_left = 217.6
+offset_top = 177.6
+offset_right = 241.6
+offset_bottom = 189.6
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "G07"
+metadata/_edit_use_anchors_ = true
+
+[node name="type" type="Label" parent="." unique_id=1864371669]
+offset_left = 184.0
+offset_top = 187.20001
+offset_right = 244.0
+offset_bottom = 199.20001
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Slide Type:"
+metadata/_edit_use_anchors_ = true
+
+[node name="typeValue" type="Label" parent="." unique_id=1600869089]
+offset_left = 248.0
+offset_top = 187.20001
+offset_right = 297.0
+offset_bottom = 199.20001
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Karuotype"
+metadata/_edit_use_anchors_ = true
+
+[node name="count" type="Label" parent="." unique_id=581853832]
+offset_left = 184.0
+offset_top = 213.0
+offset_right = 257.0
+offset_bottom = 225.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Total Counted:"
+metadata/_edit_use_anchors_ = true
+
+[node name="countValue" type="Label" parent="." unique_id=2063483000]
+offset_left = 268.0
+offset_top = 213.0
+offset_right = 284.0
+offset_bottom = 225.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "20"
+metadata/_edit_use_anchors_ = true
+
+[node name="analyzed" type="Label" parent="." unique_id=20827352]
+offset_left = 184.0
+offset_top = 222.0
+offset_right = 262.0
+offset_bottom = 234.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Total Analyzed:"
+metadata/_edit_use_anchors_ = true
+
+[node name="analyzedValue" type="Label" parent="." unique_id=831454282]
+offset_left = 268.0
+offset_top = 222.0
+offset_right = 278.0
+offset_bottom = 234.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "8"
+metadata/_edit_use_anchors_ = true
+
+[node name="karyogrammed" type="Label" parent="." unique_id=1115288359]
+offset_left = 184.0
+offset_top = 232.0
+offset_right = 286.0
+offset_bottom = 244.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Total Karyogrammed:"
+metadata/_edit_use_anchors_ = true
+
+[node name="karyogrammedValue" type="Label" parent="." unique_id=967335831]
+offset_left = 291.0
+offset_top = 232.0
+offset_right = 299.0
+offset_bottom = 244.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "4"
+metadata/_edit_use_anchors_ = true
+
+[node name="resolution" type="Label" parent="." unique_id=506312677]
+offset_left = 184.0
+offset_top = 241.6
+offset_right = 268.0
+offset_bottom = 253.6
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Band Resolution:"
+metadata/_edit_use_anchors_ = true
+
+[node name="resolutionValue" type="Label" parent="." unique_id=537532962]
+offset_left = 274.0
+offset_top = 242.0
+offset_right = 339.0
+offset_bottom = 254.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "400 - 475"
+metadata/_edit_use_anchors_ = true
+
+[node name="window" type="Sprite2D" parent="." unique_id=571967183]
+position = Vector2(88, 224.99998)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("5_8m172")
+
+[node name="interpretation" type="Label" parent="." unique_id=867020521]
+offset_left = 16.0
+offset_top = 304.0
+offset_right = 98.0
+offset_bottom = 316.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Interpretation :"
+metadata/_edit_use_anchors_ = true
+
+[node name="interpretationValue" type="Label" parent="." unique_id=1044274437]
+offset_left = 16.0
+offset_top = 320.0
+offset_right = 328.0
+offset_bottom = 437.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 10
+text = "This is an abnormal karyotype. An unbalanced recombinant chromosome 8 is present, resulting in duplication of distal 8q and deletion of distal 8p, consistent with recombinant chromosome 8 syndrome.  The genomic imbalance leads to partial trisomy of the duplicated 8q region and partial monosomy of the deleted 8p region.
+
+ No additional clonal abnormalities were detected at the stated band level of resolution."
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="completed" type="Label" parent="." unique_id=121379607]
+offset_left = 16.0
+offset_top = 432.0
+offset_right = 88.0
+offset_bottom = 444.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Completed by:"
+metadata/_edit_use_anchors_ = true
+
+[node name="completedValue" type="Label" parent="." unique_id=1178564204]
+offset_left = 176.0
+offset_top = 432.0
+offset_right = 243.0
+offset_bottom = 444.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Dr. Chrome"
+metadata/_edit_use_anchors_ = true
+
+[node name="reviewed" type="Label" parent="." unique_id=2137331895]
+offset_left = 16.0
+offset_top = 444.0
+offset_right = 167.0
+offset_bottom = 456.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Reviewed and Interpreted  by:"
+metadata/_edit_use_anchors_ = true
+
+[node name="reviewedValue" type="Label" parent="." unique_id=1624422233]
+offset_left = 176.0
+offset_top = 444.0
+offset_right = 243.0
+offset_bottom = 456.0
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 12
+text = "Dr. Osome"
+metadata/_edit_use_anchors_ = true
+
+[node name="ReportSheet2" type="Sprite2D" parent="." unique_id=652310060]
+position = Vector2(88, 225)
+scale = Vector2(0.21710527, 0.1626429)
+texture = ExtResource("6_l1b3s")

@@ -10,6 +10,7 @@ func _ready():
 	randomize()
 	GameState.patient_changed.connect(_on_patient_changed)
 	setup_chromosomes()
+	_shuffle_chromosomes()
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("sort"):
@@ -46,7 +47,11 @@ func _shuffle_chromosomes() -> void:
 		piece.global_position = target_pos
 		piece.rotation = target_rot
 		var key = "%s_%d" % [piece.chromosome_id, piece.homolog]
-		GameState.karyotype_state[key] = {"position": target_pos, "rotation": target_rot}
+		GameState.karyotype_state[key] = {
+			"position": target_pos,
+			"rotation": target_rot,
+			"normalized": _normalize(target_pos, rect)
+		}
 
 
 func get_spawn_rect() -> Rect2:
@@ -103,7 +108,11 @@ func _spawn_piece(id: String, homolog: int, rect: Rect2, force_random: bool = fa
 			randf_range(rect.position.y, rect.position.y + rect.size.y)
 		)
 		target_rot = randf_range(0, TAU)
-		GameState.karyotype_state[key] = {"position": target_pos, "rotation": target_rot}
+		GameState.karyotype_state[key] = {
+			"position": target_pos,
+			"rotation": target_rot,
+			"normalized": _normalize(target_pos, rect)
+		}
 	get_parent().add_child.call_deferred(piece)
 	piece.ready.connect(func():
 		piece.global_position = target_pos
@@ -116,14 +125,19 @@ func _bring_guide_to_front() -> void:
 	var guide := get_node(guide_node)
 	guide.move_to_front()
 
+func _normalize(pos: Vector2, rect: Rect2) -> Vector2:
+	return Vector2(
+		(pos.x - rect.position.x) / rect.size.x,
+		(pos.y - rect.position.y) / rect.size.y
+	)
 
 func _sort_chromosomes() -> void:
 	var rect = get_spawn_rect()
 	var sample_tex: Texture2D = load("res://assets/Chromosomes/1.tres")
 	var piece_size: Vector2 = sample_tex.get_size() * PIECE_SCALE
-	var within_pair_gap := 2.0      # TODO: tune — gap between homologs of the same pair
-	var between_pair_gap := 10.0    # TODO: tune — gap between different pairs, same row
-	var row_gap := 12.0             # TODO: tune — vertical gap between rows
+	var within_pair_gap := 2.0      
+	var between_pair_gap := 10.0   
+	var row_gap := 12.0             
 	var pairs_per_row := 8
 	var row_height := piece_size.y + row_gap
 	var start_pos : Vector2 = rect.position + piece_size / 2
@@ -151,4 +165,8 @@ func _sort_chromosomes() -> void:
 			piece.global_position = target_pos
 			piece.rotation = 0.0
 			var key = "%s_%d" % [piece.chromosome_id, piece.homolog]
-			GameState.karyotype_state[key] = {"position": target_pos, "rotation": 0.0}
+			GameState.karyotype_state[key] = {
+				"position": target_pos,
+				"rotation": 0.0,
+				"normalized": _normalize(target_pos, rect)
+			}

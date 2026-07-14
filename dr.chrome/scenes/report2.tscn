@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://h8yheya88xdb" path="res://assets/things of paper/things of paper/papers/tile set/pixil-layer-Background.png" id="3_jk0oc"]
 [ext_resource type="FontFile" uid="uid://bg2j70d5j31vq" path="res://assets/webfontkit-BoldPixels/boldpixels.ttf" id="4_p0lxw"]
 [ext_resource type="Texture2D" uid="uid://boand338rvx2s" path="res://assets/Square_Container.tres" id="5_jjtn3"]
+[ext_resource type="Texture2D" uid="uid://dhul4rag3byg3" path="res://assets/report_sheet2.png" id="6_55yqv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7fwct"]
 texture = ExtResource("1_vdud6")
@@ -50,7 +51,7 @@ offset_bottom = 31.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("4_p0lxw")
 theme_override_font_sizes/font_size = 14
-text = "XXXXX"
+text = "00002"
 metadata/_edit_use_anchors_ = true
 
 [node name="div" type="Label" parent="." unique_id=1090541099]
@@ -84,7 +85,7 @@ offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("4_p0lxw")
 theme_override_font_sizes/font_size = 12
-text = "XX/XX/XXXX"
+text = "14/07/2026"
 metadata/_edit_use_anchors_ = true
 
 [node name="cellLine" type="Label" parent="." unique_id=71698968]
@@ -150,7 +151,7 @@ offset_bottom = 88.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("4_p0lxw")
 theme_override_font_sizes/font_size = 12
-text = "XX/XX/XXXX"
+text = "10/07/2026"
 metadata/_edit_use_anchors_ = true
 
 [node name="speciment" type="Label" parent="." unique_id=648028796]
@@ -194,18 +195,7 @@ offset_bottom = 112.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("4_p0lxw")
 theme_override_font_sizes/font_size = 12
-text = "46,"
-metadata/_edit_use_anchors_ = true
-
-[node name="resultSex" type="Label" parent="." unique_id=549959717]
-offset_left = 98.0
-offset_top = 100.0
-offset_right = 112.0
-offset_bottom = 112.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_p0lxw")
-theme_override_font_sizes/font_size = 12
-text = "XX"
+text = "46, XX, rec(8) dup(8q) inv(8) (p23.1q22.1) [20]"
 metadata/_edit_use_anchors_ = true
 
 [node name="reason" type="Label" parent="." unique_id=827659919]
@@ -249,7 +239,7 @@ offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("4_p0lxw")
 theme_override_font_sizes/font_size = 12
-text = "X"
+text = "F"
 metadata/_edit_use_anchors_ = true
 
 [node name="investigator" type="Label" parent="." unique_id=322999062]
@@ -272,28 +262,6 @@ theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("4_p0lxw")
 theme_override_font_sizes/font_size = 12
 text = "Dr. Chrome"
-metadata/_edit_use_anchors_ = true
-
-[node name="nonclonal" type="Label" parent="." unique_id=1147173452]
-offset_left = 16.0
-offset_top = 128.0
-offset_right = 115.0
-offset_bottom = 140.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_p0lxw")
-theme_override_font_sizes/font_size = 12
-text = "Nonclonal Findings:"
-metadata/_edit_use_anchors_ = true
-
-[node name="nonclonalValue" type="Label" parent="." unique_id=1834815059]
-offset_left = 123.0
-offset_top = 128.0
-offset_right = 190.0
-offset_bottom = 140.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_p0lxw")
-theme_override_font_sizes/font_size = 12
-text = "47,XY,+13"
 metadata/_edit_use_anchors_ = true
 
 [node name="cell" type="Label" parent="." unique_id=1963562356]
@@ -474,10 +442,10 @@ offset_bottom = 437.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("4_p0lxw")
 theme_override_font_sizes/font_size = 12
-text = "This is a normal Karyotype; no clonal abnormalities were detected at stated band level.
+text = "This is an abnormal karyotype. An extra copy of chromosome 21 (trisomy 21) is present in eight of twenty cells
+examined. Gain of chromosome 21 is recurrently acquired in pluripotent stem cell cultures. 
 
-There is a nonclonal finding, listed above. Nonclonal findings may result from technical artifact, but may be due to developing clonal abnormality or to low-level mosaicism.
-
+No other clonal abnormalities were detected at the stated band level of resolution.
 "
 autowrap_mode = 3
 metadata/_edit_use_anchors_ = true
@@ -525,3 +493,8 @@ theme_override_fonts/font = ExtResource("4_p0lxw")
 theme_override_font_sizes/font_size = 12
 text = "Dr. Osome"
 metadata/_edit_use_anchors_ = true
+
+[node name="ReportSheet2" type="Sprite2D" parent="." unique_id=652310060]
+position = Vector2(88, 225)
+scale = Vector2(0.21710527, 0.1626429)
+texture = ExtResource("6_55yqv")

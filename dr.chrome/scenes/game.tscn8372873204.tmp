@@ -15,9 +15,12 @@
 [ext_resource type="PackedScene" uid="uid://bvtlx5ay8d5dk" path="res://scenes/patient3.tscn" id="11_37s47"]
 [ext_resource type="Script" uid="uid://cu07pc8l6mtya" path="res://scripts/Blood.gd" id="11_dinhu"]
 [ext_resource type="Texture2D" uid="uid://cjaroil3v2po5" path="res://assets/things of paper/things of paper/papers/Capa 72.png" id="12_ir15t"]
+[ext_resource type="Script" uid="uid://4c8djfl4noe5" path="res://scripts/report.gd" id="12_trtic"]
 [ext_resource type="PackedScene" uid="uid://c1biql2hguepm" path="res://scenes/kMachine.tscn" id="13_kvuet"]
 [ext_resource type="Texture2D" uid="uid://cqpp8jw7r7o0s" path="res://assets/computer_Orange.tres" id="14_ca42v"]
 [ext_resource type="Script" uid="uid://caitpgmkx2muw" path="res://scripts/analysis.gd" id="15_rysoc"]
+[ext_resource type="PackedScene" uid="uid://dr86cgy1x32i7" path="res://scenes/clipboard.tscn" id="17_ssvqc"]
+[ext_resource type="PackedScene" uid="uid://baju1mqpmqyaq" path="res://scenes/report1.tscn" id="19_264po"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -504,14 +507,6 @@ distance = -138.0
 atlas = ExtResource("10_kvpfn")
 region = Rect2(16, 32, 16, 16)
 
-[sub_resource type="GDScript" id="GDScript_e1j6l"]
-script/source = "extends Sprite2D
-
-func _ready() -> void:
-	visible = GameState.report
-	GameState.report_changed.connect(func(v): visible = v)
-"
-
 [node name="Game" type="Node2D" unique_id=1491512574]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=455236952]
@@ -590,7 +585,7 @@ script = ExtResource("11_dinhu")
 position = Vector2(215, 144)
 scale = Vector2(2.5, 2)
 texture = ExtResource("12_ir15t")
-script = SubResource("GDScript_e1j6l")
+script = ExtResource("12_trtic")
 
 [node name="Analysis" type="Sprite2D" parent="." unique_id=1555100885]
 position = Vector2(216, 148)
@@ -598,11 +593,18 @@ scale = Vector2(0.5000001, 0.75)
 texture = ExtResource("14_ca42v")
 script = ExtResource("15_rysoc")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2104295858]
+[node name="Clipboard" parent="." unique_id=2112990726 instance=ExtResource("17_ssvqc")]
 visible = false
+position = Vector2(-160, -88)
+scale = Vector2(0.5, 0.5)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2104295858]
 
 [node name="PauseMenu" parent="CanvasLayer" unique_id=234955865 instance=ExtResource("8_gee14")]
 offset_left = 48.0
 offset_top = 1.0
 offset_right = 48.0
 offset_bottom = 1.0
+
+[node name="Report" parent="." unique_id=51949720 instance=ExtResource("19_264po")]
+scale = Vector2(1.5, 1.5)
