@@ -80,7 +80,7 @@ func _restart():
 	GameState.blood_changed.emit(false)
 	GameState.analysis_changed.emit(false)
 	GameState.report_changed.emit(false)
-	GameState.patient_changed.emit(1)
+	GameState.patient_changed.emit(0)
 
 	get_tree().reload_current_scene()
 

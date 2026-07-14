@@ -30,6 +30,28 @@ func _on_resume_pressed() -> void:
 	resume()
 
 func _on_restart_pressed() -> void:
+	
+	GameState.ui_blocking_input = false
+	GameState.blood = false
+	GameState.analysis = false
+	GameState.report = false
+	GameState.have_sex = false
+
+	GameState.current_patient = 0
+	GameState.pending_report_patient = -1
+	GameState.patient_scores = [0, 0, 0]
+
+	GameState.karyotype_state.clear()
+	GameState.active_interactable = null
+	GameState.selected_chromosome = null
+
+	GameState.patient_sex = GameState.Sex.MALE
+
+	GameState.blood_changed.emit(false)
+	GameState.analysis_changed.emit(false)
+	GameState.report_changed.emit(false)
+	GameState.patient_changed.emit(0)
+	
 	resume()
 	get_tree().reload_current_scene()
 

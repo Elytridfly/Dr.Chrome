@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://cqpp8jw7r7o0s" path="res://assets/computer_Orange.tres" id="14_ca42v"]
 [ext_resource type="Script" uid="uid://caitpgmkx2muw" path="res://scripts/analysis.gd" id="15_rysoc"]
 [ext_resource type="PackedScene" uid="uid://dcad7syp4avfo" path="res://scenes/victory.tscn" id="18_264po"]
+[ext_resource type="PackedScene" uid="uid://c3fenw2ano7qk" path="res://scenes/start.tscn" id="21_5newe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -556,6 +557,7 @@ position = Vector2(-82, -45)
 ui_scene = ExtResource("8_vtaks")
 
 [node name="Patient1" parent="." unique_id=1886844576 instance=ExtResource("9_vtaks")]
+visible = false
 position = Vector2(-168, -16)
 target_marker = NodePath("../Chair")
 target_marker_2 = NodePath("../Door")
@@ -612,3 +614,6 @@ offset_left = 48.0
 offset_top = 1.0
 offset_right = 48.0
 offset_bottom = 1.0
+
+[node name="Start" parent="." unique_id=745862056 instance=ExtResource("21_5newe")]
+position = Vector2(0, 40)

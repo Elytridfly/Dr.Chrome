@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://c1biql2hguepm"]
 
-[ext_resource type="Texture2D" uid="uid://gqww3pemgcp3" path="res://assets/Topdown Hospital/Pngs/lab_microscope_v.png" id="1_hlcj5"]
 [ext_resource type="Script" uid="uid://dwqi5uha5xg0b" path="res://scripts/k_machine.gd" id="1_wju8t"]
+[ext_resource type="Texture2D" uid="uid://b2h3l40a7dgt7" path="res://assets/kmachine.tres" id="2_wju8t"]
+[ext_resource type="Texture2D" uid="uid://c351mk388h4ov" path="res://assets/kMachine_Highlighted.png" id="3_ylwh7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wju8t"]
 size = Vector2(8, 48.5)
@@ -9,10 +10,16 @@ size = Vector2(8, 48.5)
 [node name="KMachine" type="Area2D" unique_id=1371978686]
 script = ExtResource("1_wju8t")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=213072802]
+[node name="machine" type="Sprite2D" parent="." unique_id=213072802]
 position = Vector2(12, 13)
 scale = Vector2(1.5, 1.5625)
-texture = ExtResource("1_hlcj5")
+texture = ExtResource("2_wju8t")
+
+[node name="highlight" type="Sprite2D" parent="." unique_id=1835957530]
+visible = false
+position = Vector2(12.000002, 13)
+scale = Vector2(1.5, 1.563)
+texture = ExtResource("3_ylwh7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1149984393]
 position = Vector2(12, 23.75)

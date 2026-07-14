@@ -18,6 +18,9 @@ func _ready() -> void:
 	target_y = get_node(target_marker).global_position.y
 	pickup_area.body_entered.connect(_on_body_entered)
 	pickup_area.body_exited.connect(_on_body_exited)
+	
+	GameState.patient_changed.connect(_on_patient_changed)
+	
 	_refresh_active_state()
 
 func _physics_process(_delta: float) -> void:
@@ -41,12 +44,27 @@ func _physics_process(_delta: float) -> void:
 	move_and_slide()
 	anim.play("walking0" if dir > 0 else "walking180")
 
+func _on_patient_changed(_new_patient: int) -> void:
+	_refresh_active_state()
+
+	if is_active:
+		set_physics_process(true)
+
+
 func _refresh_active_state() -> void:
-	var should_be_active : bool = patient_number == GameState.current_patient and not second_arrived
+	var should_be_active := (
+		GameState.current_patient > 0
+		and patient_number == GameState.current_patient
+		and not second_arrived
+	)
+
 	if should_be_active == is_active:
 		return
+
 	is_active = should_be_active
+
 	visible = is_active
+	set_physics_process(is_active)
 	pickup_area.set_deferred("monitoring", is_active)
 
 func _process_walk_to_second() -> void:

@@ -11,7 +11,7 @@ var analysis: bool = false
 var report: bool = false
 var have_sex := false
 
-var current_patient: int = 1
+var current_patient: int = 0
 
 var pending_report_patient: int = -1
 

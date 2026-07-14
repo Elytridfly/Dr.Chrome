@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://c3fenw2ano7qk"]
+
+[ext_resource type="Script" uid="uid://bwpo1mle7eaiu" path="res://scripts/start.gd" id="1_8itgj"]
+[ext_resource type="Texture2D" uid="uid://boand338rvx2s" path="res://assets/Square_Container.tres" id="1_jaeev"]
+[ext_resource type="FontFile" uid="uid://yo1b42pll8nu" path="res://assets/webfontkit-BoldPixels/BoldPixels.otf" id="2_bodal"]
+[ext_resource type="FontFile" uid="uid://bg2j70d5j31vq" path="res://assets/webfontkit-BoldPixels/boldpixels.ttf" id="2_u80x2"]
+[ext_resource type="Texture2D" uid="uid://borifpe5fsnhy" path="res://assets/Chromosomes/3.tres" id="4_4ge6i"]
+[ext_resource type="Texture2D" uid="uid://ck1r175qi87rr" path="res://assets/Chromosomes/18.tres" id="5_8itgj"]
+[ext_resource type="Texture2D" uid="uid://lsxsoqimv0df" path="res://assets/Topdown Hospital/Pngs/lab_computer.png" id="6_tn317"]
+[ext_resource type="Texture2D" uid="uid://3g31ou30rsb2" path="res://assets/Topdown Hospital/Pngs/lab_microscope_h.png" id="7_m8nf6"]
+
+[node name="Start" type="Sprite2D" unique_id=745862056]
+script = ExtResource("1_8itgj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=719696132]
+texture = ExtResource("1_jaeev")
+
+[node name="Play" type="Button" parent="." unique_id=414129563]
+offset_left = -22.0
+offset_top = 6.0
+offset_right = 23.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("2_bodal")
+text = "Play!"
+icon_alignment = 1
+
+[node name="title" type="Label" parent="." unique_id=15327232]
+anchors_preset = -1
+offset_left = -48.0
+offset_top = -16.0
+offset_right = 59.0
+offset_bottom = 7.0
+pivot_offset = Vector2(96, 24)
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("2_u80x2")
+theme_override_font_sizes/font_size = 22
+text = "Dr. Chrome"
+metadata/_edit_use_anchors_ = true
+
+[node name="3" type="Sprite2D" parent="." unique_id=1757369368]
+position = Vector2(46.000004, 37.000004)
+rotation = -2.8902652
+scale = Vector2(0.25, 0.181)
+texture = ExtResource("4_4ge6i")
+
+[node name="18" type="Sprite2D" parent="." unique_id=929286022]
+position = Vector2(41, -35)
+rotation = -0.44505897
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_8itgj")
+
+[node name="LabComputer" type="Sprite2D" parent="." unique_id=1075207978]
+position = Vector2(-44, -28)
+rotation = -0.55676
+texture = ExtResource("6_tn317")
+
+[node name="LabMicroscopeH" type="Sprite2D" parent="." unique_id=645182158]
+position = Vector2(-39, 33)
+rotation = 0.29670596
+texture = ExtResource("7_m8nf6")
