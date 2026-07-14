@@ -195,7 +195,7 @@ offset_bottom = 112.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("4_p0lxw")
 theme_override_font_sizes/font_size = 12
-text = "46, XX, rec(8) dup(8q) inv(8) (p23.1q22.1) [20]"
+text = " 47,XY,+21[8]/46,XY[12]"
 metadata/_edit_use_anchors_ = true
 
 [node name="reason" type="Label" parent="." unique_id=827659919]

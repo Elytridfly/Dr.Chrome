@@ -1,12 +1,10 @@
 [gd_scene format=3 uid="uid://baju1mqpmqyaq"]
 
-[ext_resource type="Script" uid="uid://d0acjtrkfluah" path="res://scripts/report.gd" id="1_l62ha"]
 [ext_resource type="Texture2D" uid="uid://suk5y061oysh" path="res://assets/things of paper/things of paper/papers/tile set/PTS (5).png" id="2_312qc"]
 [ext_resource type="Texture2D" uid="uid://cjfs1yuqyv5rp" path="res://assets/things of paper/things of paper/papers/tile set/PTS (6).png" id="3_ercb6"]
 [ext_resource type="Texture2D" uid="uid://h8yheya88xdb" path="res://assets/things of paper/things of paper/papers/tile set/pixil-layer-Background.png" id="4_dsrh0"]
 [ext_resource type="FontFile" uid="uid://bg2j70d5j31vq" path="res://assets/webfontkit-BoldPixels/boldpixels.ttf" id="5_orbm0"]
 [ext_resource type="Texture2D" uid="uid://boand338rvx2s" path="res://assets/Square_Container.tres" id="6_blush"]
-[ext_resource type="Script" uid="uid://bmjeupw1s0lfn" path="res://scripts/window-report.gd" id="7_312qc"]
 [ext_resource type="Texture2D" uid="uid://dyvxrj16osgey" path="res://assets/report_sheet1.png" id="8_ercb6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7fwct"]
@@ -27,7 +25,6 @@ sources/6 = SubResource("TileSetAtlasSource_p455r")
 sources/7 = SubResource("TileSetAtlasSource_n6tbu")
 
 [node name="Report1" type="Sprite2D" unique_id=51949720]
-script = ExtResource("1_l62ha")
 
 [node name="Paper" type="TileMap" parent="." unique_id=1643635931]
 tile_set = SubResource("TileSet_v5gy4")
@@ -458,7 +455,6 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(88, 224.99998)
 scale = Vector2(1.25, 1.25)
 texture = ExtResource("6_blush")
-script = ExtResource("7_312qc")
 
 [node name="interpretation" type="Label" parent="." unique_id=867020521]
 offset_left = 16.0

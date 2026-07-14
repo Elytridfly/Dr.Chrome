@@ -51,7 +51,7 @@ offset_bottom = 31.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 14
-text = "XXXXX"
+text = "003"
 metadata/_edit_use_anchors_ = true
 
 [node name="div" type="Label" parent="." unique_id=1090541099]
@@ -195,18 +195,7 @@ offset_bottom = 112.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
-text = "46,"
-metadata/_edit_use_anchors_ = true
-
-[node name="resultSex" type="Label" parent="." unique_id=549959717]
-offset_left = 98.0
-offset_top = 100.0
-offset_right = 112.0
-offset_bottom = 112.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "XX"
+text = "46, XX, rec(8) dup(8q) inv(8) (p23.1q22.1) [20]"
 metadata/_edit_use_anchors_ = true
 
 [node name="reason" type="Label" parent="." unique_id=827659919]
@@ -250,7 +239,7 @@ offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
-text = "X"
+text = "F"
 metadata/_edit_use_anchors_ = true
 
 [node name="investigator" type="Label" parent="." unique_id=322999062]

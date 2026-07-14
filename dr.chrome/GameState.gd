@@ -13,6 +13,9 @@ var have_sex := false
 
 var current_patient: int = 1
 
+var pending_report_patient: int = -1
+
+var patient_scores: Array[int] = [0,0,0]
 
 var karyotype_state := {}
 var active_interactable: Node = null
@@ -25,6 +28,7 @@ var patient_sex: int = Sex.MALE
 func advance_patient() -> void:
 	current_patient += 1
 	karyotype_state.clear()
+	pending_report_patient = -1
 	patient_changed.emit(current_patient)
 	
 

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://lp84lp0nmt2j" path="res://scripts/pause_menu.gd" id="1_myx47"]
 [ext_resource type="Shader" uid="uid://cf735wq66cg5d" path="res://scenes/pause_menu.gdshader" id="1_n87rw"]
+[ext_resource type="FontFile" uid="uid://yo1b42pll8nu" path="res://assets/webfontkit-BoldPixels/BoldPixels.otf" id="3_kukqi"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_trsbb"]
 shader = ExtResource("1_n87rw")
@@ -140,17 +141,20 @@ alignment = 1
 
 [node name="Resume" type="Button" parent="PanelContainer/VBoxContainer" unique_id=885497027]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_kukqi")
 theme_override_font_sizes/font_size = 30
 text = "Resume"
 icon_alignment = 1
 
 [node name="Restart" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1827251071]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_kukqi")
 theme_override_font_sizes/font_size = 30
 text = "Restart"
 
 [node name="Quit" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1201708934]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_kukqi")
 theme_override_font_sizes/font_size = 30
 text = "Quit"
 

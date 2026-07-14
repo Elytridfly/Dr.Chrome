@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://5b1u5gwwdnyh"]
 
-[ext_resource type="Script" uid="uid://ci2lb8ulma7id" path="res://scripts/game.gd" id="1_1kice"]
 [ext_resource type="PackedScene" uid="uid://dhcjgtag05qqa" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://cimjgiuf0u8un" path="res://assets/Topdown Hospital/Spritesheets/spritesheet_hospital_01.png" id="2_lnu2h"]
 [ext_resource type="Texture2D" uid="uid://rxrrp7n07rk" path="res://assets/Pixel Cyberpunk Interior/pixel-cyberpunk-interior.png" id="2_yqjtg"]
@@ -515,7 +514,6 @@ func _ready() -> void:
 "
 
 [node name="Game" type="Node2D" unique_id=1491512574]
-script = ExtResource("1_1kice")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=455236952]
 tile_set = SubResource("TileSet_8vrlf")

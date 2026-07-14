@@ -42,7 +42,7 @@ func _physics_process(_delta: float) -> void:
 	anim.play("walking0" if dir > 0 else "walking180")
 
 func _refresh_active_state() -> void:
-	var should_be_active := patient_number == GameState.current_patient and not second_arrived
+	var should_be_active : bool = patient_number == GameState.current_patient and not second_arrived
 	if should_be_active == is_active:
 		return
 	is_active = should_be_active
@@ -60,7 +60,10 @@ func _process_walk_to_second() -> void:
 		visible = false
 		set_physics_process(false)
 		pickup_area.set_deferred("monitoring", false)
-		GameState.advance_patient()
+		if patient_number == 3:
+			get_tree().current_scene.show_summary()
+		else:
+			GameState.advance_patient()
 		return
 	velocity = Vector2(0, -SPEED)
 	move_and_slide()
