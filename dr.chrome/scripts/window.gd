@@ -31,6 +31,8 @@ func _on_patient_changed(_new_patient: int) -> void:
 	setup_chromosomes()
 
 func _shuffle_chromosomes() -> void:
+	if GameState.current_patient == 3:
+		return
 	var rect = get_spawn_rect()
 	var sample_tex: Texture2D = load("res://assets/Chromosomes/1.tres")
 	var piece_size: Vector2 = sample_tex.get_size() * PIECE_SCALE
@@ -63,6 +65,8 @@ func get_spawn_rect() -> Rect2:
 
 func setup_chromosomes(force_random: bool = false):
 	spawned_pieces.clear()
+	if GameState.current_patient == 3:
+		return
 	var rect = get_spawn_rect()
 	var sample_tex: Texture2D = load("res://assets/Chromosomes/1.tres")
 	var piece_size: Vector2 = sample_tex.get_size() * PIECE_SCALE
@@ -70,7 +74,7 @@ func setup_chromosomes(force_random: bool = false):
 
 	for i in range(1, 23):
 		var id := str(i)
-		if i == 8 and GameState.current_patient == 3:
+		if i == 8 and GameState.current_patient == 1:
 			_spawn_piece(id, 1, inset_rect, force_random)
 			_spawn_piece("8-error", 2, inset_rect, force_random)
 		else:

@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c5bdibovkpa1w" path="res://assets/Chromosome_Sheet.png" id="1_or254"]
 [ext_resource type="Script" uid="uid://dac0peyiel6yv" path="res://scripts/guide.gd" id="1_wxloj"]
 [ext_resource type="FontFile" uid="uid://bg2j70d5j31vq" path="res://assets/webfontkit-BoldPixels/boldpixels.ttf" id="3_rb1b7"]
+[ext_resource type="Texture2D" uid="uid://dp70hdn8fulfb" path="res://assets/legend.jpeg" id="5_fd7ko"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rb1b7"]
 size = Vector2(64, 256)
@@ -351,3 +352,8 @@ metadata/_edit_group_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Toggle" unique_id=1962345360]
 position = Vector2(16, 48)
 shape = SubResource("RectangleShape2D_rb1b7")
+
+[node name="Legend" type="Sprite2D" parent="." unique_id=97084324]
+position = Vector2(192, 427.99997)
+scale = Vector2(0.5755815, 0.6566115)
+texture = ExtResource("5_fd7ko")

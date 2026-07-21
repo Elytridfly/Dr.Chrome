@@ -1,11 +1,9 @@
 extends Sprite2D
-
 @export var hover_offset: Vector2 = Vector2(-10, 0)
 @export var open_offset: Vector2 = Vector2(300, 0)
 @export var slide_duration: float = 0.25
-
 @onready var toggle_area: Area2D = $Toggle
-
+@onready var legend: Sprite2D = $Legend
 var base_position: Vector2
 var is_open := false
 var is_hovering := false
@@ -16,6 +14,14 @@ func _ready() -> void:
 	toggle_area.mouse_entered.connect(_on_mouse_entered)
 	toggle_area.mouse_exited.connect(_on_mouse_exited)
 	toggle_area.input_event.connect(_on_toggle_input_event)
+	GameState.patient_changed.connect(_on_patient_changed)
+	_refresh_legend_visibility()
+
+func _on_patient_changed(_new_patient: int) -> void:
+	_refresh_legend_visibility()
+
+func _refresh_legend_visibility() -> void:
+	legend.visible = (GameState.current_patient == 3)
 
 func _on_mouse_entered() -> void:
 	is_hovering = true

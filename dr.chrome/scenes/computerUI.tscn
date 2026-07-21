@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://xp66tku42axo"]
 
 [ext_resource type="Texture2D" uid="uid://boand338rvx2s" path="res://assets/Square_Container.tres" id="1_d136o"]
+[ext_resource type="Script" uid="uid://bvk8dvi06c7bt" path="res://scripts/computer_ui.gd" id="1_i4w1n"]
 [ext_resource type="Script" uid="uid://djlfwto2wxspp" path="res://scripts/window.gd" id="2_d136o"]
 [ext_resource type="PackedScene" uid="uid://bi2quga825802" path="res://scenes/guide.tscn" id="3_37vo1"]
 [ext_resource type="PackedScene" uid="uid://dr86cgy1x32i7" path="res://scenes/clipboard.tscn" id="4_n87dj"]
+[ext_resource type="PackedScene" uid="uid://bysu20pu5dln2" path="res://scenes/clipboard2.tscn" id="5_lpflk"]
 
 [node name="Control" type="Control" unique_id=892762109]
 layout_mode = 3
@@ -20,6 +22,7 @@ grow_horizontal = 2
 grow_vertical = 2
 offset_transform_enabled = true
 mouse_filter = 2
+script = ExtResource("1_i4w1n")
 
 [node name="window" type="Sprite2D" parent="." unique_id=829177207]
 scale = Vector2(2.25, 2.25)
@@ -32,4 +35,8 @@ position = Vector2(-476, -213)
 
 [node name="Clipboard" parent="." unique_id=2112990726 instance=ExtResource("4_n87dj")]
 position = Vector2(244, -117)
+scale = Vector2(0.5, 0.5)
+
+[node name="Clipboard2" parent="." unique_id=1087872071 instance=ExtResource("5_lpflk")]
+position = Vector2(-86, -117)
 scale = Vector2(0.5, 0.5)

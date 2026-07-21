@@ -36,7 +36,6 @@ func get_current_patient_is_male() -> bool:
 	match current_patient:
 		1: return Patient1Data.CORRECT_SEX
 		2: return Patient2Data.CORRECT_SEX
-		3: return Patient3Data.CORRECT_SEX
 		_: return true
 
 

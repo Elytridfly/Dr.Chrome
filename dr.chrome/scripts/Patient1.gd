@@ -1,13 +1,13 @@
 extends Resource
 class_name Patient1Data
 
-var answerSex: bool = true   # true = Male, false = Female
+var answerSex: bool = true
 var answerCount: int = 0
 var answerAbnormality: int = 0
 
-const CORRECT_SEX: bool = true      
+const CORRECT_SEX: bool = false      
 const CORRECT_COUNT: int = 46       
-const CORRECT_ABNORMALITY: int = 0  
+const CORRECT_ABNORMALITY: int = 8  
 
 func score() -> int:
 	var points := 0
