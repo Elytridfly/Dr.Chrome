@@ -1,11 +1,13 @@
-[gd_scene format=3 uid="uid://cp2rptyxg1xns"]
+[gd_scene format=3 uid="uid://baju1mqpmqyaq"]
 
 [ext_resource type="Texture2D" uid="uid://suk5y061oysh" path="res://assets/things of paper/things of paper/papers/tile set/PTS (5).png" id="1_l1b3s"]
 [ext_resource type="Texture2D" uid="uid://cjfs1yuqyv5rp" path="res://assets/things of paper/things of paper/papers/tile set/PTS (6).png" id="2_8maip"]
 [ext_resource type="Texture2D" uid="uid://h8yheya88xdb" path="res://assets/things of paper/things of paper/papers/tile set/pixil-layer-Background.png" id="3_5v6eu"]
 [ext_resource type="FontFile" uid="uid://bg2j70d5j31vq" path="res://assets/webfontkit-BoldPixels/boldpixels.ttf" id="4_hfdxr"]
 [ext_resource type="Texture2D" uid="uid://boand338rvx2s" path="res://assets/Square_Container.tres" id="5_8m172"]
-[ext_resource type="Texture2D" uid="uid://coly7dpja4vq0" path="res://assets/report_sheet3.png" id="6_l1b3s"]
+[ext_resource type="Texture2D" uid="uid://ctc10xcor476x" path="res://assets/correct_tree.png" id="6_8maip"]
+[ext_resource type="Texture2D" uid="uid://hf4vdjxwkmph" path="res://assets/explaination.jpeg" id="7_5v6eu"]
+[ext_resource type="FontFile" uid="uid://yo1b42pll8nu" path="res://assets/webfontkit-BoldPixels/BoldPixels.otf" id="8_5v6eu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7fwct"]
 texture = ExtResource("1_l1b3s")
@@ -24,7 +26,7 @@ sources/5 = SubResource("TileSetAtlasSource_7fwct")
 sources/6 = SubResource("TileSetAtlasSource_p455r")
 sources/7 = SubResource("TileSetAtlasSource_n6tbu")
 
-[node name="Report" type="Sprite2D" unique_id=51949720]
+[node name="Report3" type="Sprite2D" unique_id=51949720]
 
 [node name="Paper" type="TileMap" parent="." unique_id=1643635931]
 tile_set = SubResource("TileSet_v5gy4")
@@ -187,17 +189,6 @@ theme_override_font_sizes/font_size = 12
 text = "Results:"
 metadata/_edit_use_anchors_ = true
 
-[node name="resultValue" type="Label" parent="." unique_id=1556571642]
-offset_left = 72.0
-offset_top = 100.0
-offset_right = 88.0
-offset_bottom = 112.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "46, XX, rec(8) dup(8q) inv(8) (p23.1q22.1) [20]"
-metadata/_edit_use_anchors_ = true
-
 [node name="reason" type="Label" parent="." unique_id=827659919]
 offset_left = 176.0
 offset_top = 52.0
@@ -239,7 +230,7 @@ offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
-text = "F"
+text = "M"
 metadata/_edit_use_anchors_ = true
 
 [node name="investigator" type="Label" parent="." unique_id=322999062]
@@ -264,188 +255,20 @@ theme_override_font_sizes/font_size = 12
 text = "Dr. Chrome"
 metadata/_edit_use_anchors_ = true
 
-[node name="cell" type="Label" parent="." unique_id=1963562356]
-offset_left = 184.0
-offset_top = 168.00002
-offset_right = 216.0
-offset_bottom = 180.00002
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "Cell:"
-metadata/_edit_use_anchors_ = true
-
-[node name="cellValue" type="Label" parent="." unique_id=907461563]
-offset_left = 216.0
-offset_top = 168.0
-offset_right = 224.0
-offset_bottom = 180.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "9"
-metadata/_edit_use_anchors_ = true
-
-[node name="slide" type="Label" parent="." unique_id=1293854894]
-offset_left = 184.0
-offset_top = 177.6
-offset_right = 224.0
-offset_bottom = 189.6
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "Slide:"
-metadata/_edit_use_anchors_ = true
-
-[node name="slideValue" type="Label" parent="." unique_id=111839608]
-offset_left = 217.6
-offset_top = 177.6
-offset_right = 241.6
-offset_bottom = 189.6
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "G07"
-metadata/_edit_use_anchors_ = true
-
-[node name="type" type="Label" parent="." unique_id=1864371669]
-offset_left = 184.0
-offset_top = 187.20001
-offset_right = 244.0
-offset_bottom = 199.20001
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "Slide Type:"
-metadata/_edit_use_anchors_ = true
-
-[node name="typeValue" type="Label" parent="." unique_id=1600869089]
-offset_left = 248.0
-offset_top = 187.20001
-offset_right = 297.0
-offset_bottom = 199.20001
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "Karuotype"
-metadata/_edit_use_anchors_ = true
-
-[node name="count" type="Label" parent="." unique_id=581853832]
-offset_left = 184.0
-offset_top = 213.0
-offset_right = 257.0
-offset_bottom = 225.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "Total Counted:"
-metadata/_edit_use_anchors_ = true
-
-[node name="countValue" type="Label" parent="." unique_id=2063483000]
-offset_left = 268.0
-offset_top = 213.0
-offset_right = 284.0
-offset_bottom = 225.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "20"
-metadata/_edit_use_anchors_ = true
-
-[node name="analyzed" type="Label" parent="." unique_id=20827352]
-offset_left = 184.0
-offset_top = 222.0
-offset_right = 262.0
-offset_bottom = 234.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "Total Analyzed:"
-metadata/_edit_use_anchors_ = true
-
-[node name="analyzedValue" type="Label" parent="." unique_id=831454282]
-offset_left = 268.0
-offset_top = 222.0
-offset_right = 278.0
-offset_bottom = 234.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "8"
-metadata/_edit_use_anchors_ = true
-
-[node name="karyogrammed" type="Label" parent="." unique_id=1115288359]
-offset_left = 184.0
-offset_top = 232.0
-offset_right = 286.0
-offset_bottom = 244.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "Total Karyogrammed:"
-metadata/_edit_use_anchors_ = true
-
-[node name="karyogrammedValue" type="Label" parent="." unique_id=967335831]
-offset_left = 291.0
-offset_top = 232.0
-offset_right = 299.0
-offset_bottom = 244.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "4"
-metadata/_edit_use_anchors_ = true
-
-[node name="resolution" type="Label" parent="." unique_id=506312677]
-offset_left = 184.0
-offset_top = 241.6
-offset_right = 268.0
-offset_bottom = 253.6
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "Band Resolution:"
-metadata/_edit_use_anchors_ = true
-
-[node name="resolutionValue" type="Label" parent="." unique_id=537532962]
-offset_left = 274.0
-offset_top = 242.0
-offset_right = 339.0
-offset_bottom = 254.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 12
-text = "400 - 475"
-metadata/_edit_use_anchors_ = true
-
 [node name="window" type="Sprite2D" parent="." unique_id=571967183]
-position = Vector2(88, 224.99998)
-scale = Vector2(1.25, 1.25)
+position = Vector2(176, 192)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("5_8m172")
 
 [node name="interpretation" type="Label" parent="." unique_id=867020521]
 offset_left = 16.0
-offset_top = 304.0
+offset_top = 280.0
 offset_right = 98.0
-offset_bottom = 316.0
+offset_bottom = 292.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
-text = "Interpretation :"
-metadata/_edit_use_anchors_ = true
-
-[node name="interpretationValue" type="Label" parent="." unique_id=1044274437]
-offset_left = 16.0
-offset_top = 320.0
-offset_right = 328.0
-offset_bottom = 437.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("4_hfdxr")
-theme_override_font_sizes/font_size = 10
-text = "This is an abnormal karyotype. An unbalanced recombinant chromosome 8 is present, resulting in duplication of distal 8q and deletion of distal 8p, consistent with recombinant chromosome 8 syndrome.  The genomic imbalance leads to partial trisomy of the duplicated 8q region and partial monosomy of the deleted 8p region.
-
- No additional clonal abnormalities were detected at the stated band level of resolution."
-autowrap_mode = 3
+text = "Reasoning :"
 metadata/_edit_use_anchors_ = true
 
 [node name="completed" type="Label" parent="." unique_id=121379607]
@@ -492,7 +315,27 @@ theme_override_font_sizes/font_size = 12
 text = "Dr. Osome"
 metadata/_edit_use_anchors_ = true
 
-[node name="ReportSheet2" type="Sprite2D" parent="." unique_id=652310060]
-position = Vector2(88, 225)
-scale = Vector2(0.21710527, 0.1626429)
-texture = ExtResource("6_l1b3s")
+[node name="CorrectTree" type="Sprite2D" parent="." unique_id=244027155]
+position = Vector2(176, 200)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("6_8maip")
+
+[node name="Explaination" type="Sprite2D" parent="." unique_id=820431454]
+position = Vector2(176.00002, 360.00003)
+scale = Vector2(0.225, 0.225)
+texture = ExtResource("7_5v6eu")
+
+[node name="labels" type="Label" parent="Explaination" unique_id=137831824]
+anchors_preset = -1
+anchor_left = 0.4285698
+anchor_right = 0.4285698
+offset_left = -872.01373
+offset_top = -568.88885
+offset_right = -624.01373
+offset_bottom = -552.88885
+scale = Vector2(2.5, 2.5)
+theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
+theme_override_fonts/font = ExtResource("8_5v6eu")
+theme_override_font_sizes/font_size = 17
+text = "1     2    3              4    5    6"
+metadata/_edit_use_anchors_ = true

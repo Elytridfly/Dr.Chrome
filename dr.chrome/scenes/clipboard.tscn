@@ -9,9 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://boand338rvx2s" path="res://assets/Square_Container.tres" id="6_87ljq"]
 [ext_resource type="ButtonGroup" uid="uid://bkhp3gj0t58vl" path="res://scripts/buttonGroups/sex_buttons.tres" id="7_i2aqi"]
 [ext_resource type="FontFile" uid="uid://yo1b42pll8nu" path="res://assets/webfontkit-BoldPixels/BoldPixels.otf" id="8_gu3d4"]
-[ext_resource type="PackedScene" uid="uid://baju1mqpmqyaq" path="res://scenes/report1.tscn" id="10_jarrd"]
 [ext_resource type="PackedScene" uid="uid://frc65n3xitk1" path="res://scenes/report2.tscn" id="11_c8blv"]
-[ext_resource type="PackedScene" uid="uid://cp2rptyxg1xns" path="res://scenes/report3.tscn" id="12_cg5v4"]
+[ext_resource type="PackedScene" uid="uid://cp2rptyxg1xns" path="res://scenes/report1.tscn" id="12_cg5v4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jarrd"]
 texture = ExtResource("2_84lk1")
@@ -102,7 +101,7 @@ offset_bottom = 108.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("5_84lk1")
 theme_override_font_sizes/font_size = 12
-text = "XX/XX/XXXX"
+text = "12/07/2026"
 metadata/_edit_use_anchors_ = true
 
 [node name="speciment" type="Label" parent="." unique_id=839354455]
@@ -294,7 +293,4 @@ shape = SubResource("RectangleShape2D_gu3d4")
 visible = false
 
 [node name="report2" parent="." unique_id=686381190 instance=ExtResource("11_c8blv")]
-visible = false
-
-[node name="report3" parent="." unique_id=51949720 instance=ExtResource("10_jarrd")]
 visible = false

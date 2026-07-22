@@ -9,6 +9,7 @@
 [ext_resource type="FontFile" uid="uid://bg2j70d5j31vq" path="res://assets/webfontkit-BoldPixels/boldpixels.ttf" id="7_fvhid"]
 [ext_resource type="FontFile" uid="uid://yo1b42pll8nu" path="res://assets/webfontkit-BoldPixels/BoldPixels.otf" id="9_a61u7"]
 [ext_resource type="Texture2D" uid="uid://d0c6f6kykn3kw" path="res://assets/family_tree.png" id="9_xfom8"]
+[ext_resource type="PackedScene" uid="uid://baju1mqpmqyaq" path="res://scenes/report3.tscn" id="10_6ekby"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ekby"]
 texture = ExtResource("3_yo6qw")
@@ -215,3 +216,5 @@ text = "Submit"
 position = Vector2(168, 208)
 scale = Vector2(2.1517856, 2.3083334)
 texture = ExtResource("9_xfom8")
+
+[node name="Report3" parent="." unique_id=51949720 instance=ExtResource("10_6ekby")]

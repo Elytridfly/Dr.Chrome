@@ -7,11 +7,11 @@ extends Sprite2D
 @onready var patient_sprite: AnimatedSprite2D = $patientSprite
 @onready var count_value: LineEdit = $countValue
 @onready var abnormality_id: LineEdit = $abnormalityId
-@onready var reports: Array[Sprite2D] = [$report1, $report2, $report3]
+@onready var reports: Array[Sprite2D] = [$report1, $report2]
 @export var hover_offset: Vector2 = Vector2(10, 0)
 @export var open_offset: Vector2 = Vector2(-300, 0)
 @export var slide_duration: float = 0.25
-@export var report_slide_distance: float = 500.0   # TODO: tune — must clear the checklist fully off-screen below
+@export var report_slide_distance: float = 500.0
 var base_position: Vector2
 var report_base_positions: Array[Vector2] = []
 var is_open := false

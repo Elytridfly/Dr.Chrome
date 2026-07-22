@@ -1,22 +1,22 @@
-[gd_scene format=3 uid="uid://baju1mqpmqyaq"]
+[gd_scene format=3 uid="uid://cp2rptyxg1xns"]
 
-[ext_resource type="Texture2D" uid="uid://suk5y061oysh" path="res://assets/things of paper/things of paper/papers/tile set/PTS (5).png" id="2_312qc"]
-[ext_resource type="Texture2D" uid="uid://cjfs1yuqyv5rp" path="res://assets/things of paper/things of paper/papers/tile set/PTS (6).png" id="3_ercb6"]
-[ext_resource type="Texture2D" uid="uid://h8yheya88xdb" path="res://assets/things of paper/things of paper/papers/tile set/pixil-layer-Background.png" id="4_dsrh0"]
-[ext_resource type="FontFile" uid="uid://bg2j70d5j31vq" path="res://assets/webfontkit-BoldPixels/boldpixels.ttf" id="5_orbm0"]
-[ext_resource type="Texture2D" uid="uid://boand338rvx2s" path="res://assets/Square_Container.tres" id="6_blush"]
-[ext_resource type="Texture2D" uid="uid://dyvxrj16osgey" path="res://assets/report_sheet1.png" id="8_ercb6"]
+[ext_resource type="Texture2D" uid="uid://suk5y061oysh" path="res://assets/things of paper/things of paper/papers/tile set/PTS (5).png" id="1_l1b3s"]
+[ext_resource type="Texture2D" uid="uid://cjfs1yuqyv5rp" path="res://assets/things of paper/things of paper/papers/tile set/PTS (6).png" id="2_8maip"]
+[ext_resource type="Texture2D" uid="uid://h8yheya88xdb" path="res://assets/things of paper/things of paper/papers/tile set/pixil-layer-Background.png" id="3_5v6eu"]
+[ext_resource type="FontFile" uid="uid://bg2j70d5j31vq" path="res://assets/webfontkit-BoldPixels/boldpixels.ttf" id="4_hfdxr"]
+[ext_resource type="Texture2D" uid="uid://boand338rvx2s" path="res://assets/Square_Container.tres" id="5_8m172"]
+[ext_resource type="Texture2D" uid="uid://coly7dpja4vq0" path="res://assets/report_sheet3.png" id="6_l1b3s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7fwct"]
-texture = ExtResource("2_312qc")
+texture = ExtResource("1_l1b3s")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p455r"]
-texture = ExtResource("3_ercb6")
+texture = ExtResource("2_8maip")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n6tbu"]
-texture = ExtResource("4_dsrh0")
+texture = ExtResource("3_5v6eu")
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_v5gy4"]
@@ -24,7 +24,7 @@ sources/5 = SubResource("TileSetAtlasSource_7fwct")
 sources/6 = SubResource("TileSetAtlasSource_p455r")
 sources/7 = SubResource("TileSetAtlasSource_n6tbu")
 
-[node name="Report1" type="Sprite2D" unique_id=51949720]
+[node name="Report" type="Sprite2D" unique_id=51949720]
 
 [node name="Paper" type="TileMap" parent="." unique_id=1643635931]
 tile_set = SubResource("TileSet_v5gy4")
@@ -38,7 +38,7 @@ offset_right = 236.0
 offset_bottom = 31.0
 pivot_offset = Vector2(96, 24)
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 14
 text = "Chromosome Analysis Report : "
 metadata/_edit_use_anchors_ = true
@@ -49,9 +49,9 @@ offset_top = 8.0
 offset_right = 276.0
 offset_bottom = 31.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 14
-text = "00001"
+text = "001"
 metadata/_edit_use_anchors_ = true
 
 [node name="div" type="Label" parent="." unique_id=1090541099]
@@ -60,7 +60,7 @@ offset_top = 24.0
 offset_right = 336.0
 offset_bottom = 37.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 14
 text = "----------------------------------------"
 horizontal_alignment = 1
@@ -72,7 +72,7 @@ offset_top = 40.0
 offset_right = 48.0
 offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Date:"
 metadata/_edit_use_anchors_ = true
@@ -83,7 +83,7 @@ offset_top = 40.0
 offset_right = 113.0
 offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "14/07/2026"
 metadata/_edit_use_anchors_ = true
@@ -94,7 +94,7 @@ offset_top = 52.0
 offset_right = 68.0
 offset_bottom = 64.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Cell Line:"
 metadata/_edit_use_anchors_ = true
@@ -105,7 +105,7 @@ offset_top = 52.0
 offset_right = 145.0
 offset_bottom = 64.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Sample Report"
 metadata/_edit_use_anchors_ = true
@@ -116,7 +116,7 @@ offset_top = 64.0
 offset_right = 123.0
 offset_bottom = 76.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Submitted Passage #:"
 metadata/_edit_use_anchors_ = true
@@ -127,7 +127,7 @@ offset_top = 64.0
 offset_right = 142.0
 offset_bottom = 76.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "6"
 metadata/_edit_use_anchors_ = true
@@ -138,7 +138,7 @@ offset_top = 76.0
 offset_right = 80.0
 offset_bottom = 88.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Sample Date:"
 metadata/_edit_use_anchors_ = true
@@ -149,7 +149,7 @@ offset_top = 76.0
 offset_right = 153.0
 offset_bottom = 88.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "10/07/2026"
 metadata/_edit_use_anchors_ = true
@@ -160,7 +160,7 @@ offset_top = 88.0
 offset_right = 72.0
 offset_bottom = 100.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Speciment:"
 metadata/_edit_use_anchors_ = true
@@ -171,7 +171,7 @@ offset_top = 88.0
 offset_right = 137.0
 offset_bottom = 100.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Human IPSC"
 metadata/_edit_use_anchors_ = true
@@ -182,7 +182,7 @@ offset_top = 100.0
 offset_right = 72.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Results:"
 metadata/_edit_use_anchors_ = true
@@ -193,20 +193,9 @@ offset_top = 100.0
 offset_right = 88.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
-text = "46,"
-metadata/_edit_use_anchors_ = true
-
-[node name="resultSex" type="Label" parent="." unique_id=549959717]
-offset_left = 98.0
-offset_top = 100.0
-offset_right = 112.0
-offset_bottom = 112.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
-theme_override_font_sizes/font_size = 12
-text = "XY"
+text = "46, XX, rec(8) dup(8q) inv(8) (p23.1q22.1) [20]"
 metadata/_edit_use_anchors_ = true
 
 [node name="reason" type="Label" parent="." unique_id=827659919]
@@ -215,7 +204,7 @@ offset_top = 52.0
 offset_right = 274.0
 offset_bottom = 64.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Reason for Testing:"
 metadata/_edit_use_anchors_ = true
@@ -226,7 +215,7 @@ offset_top = 52.0
 offset_right = 297.0
 offset_bottom = 64.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Fun"
 metadata/_edit_use_anchors_ = true
@@ -237,7 +226,7 @@ offset_top = 40.0
 offset_right = 250.0
 offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Cell Line Sex:"
 metadata/_edit_use_anchors_ = true
@@ -248,9 +237,9 @@ offset_top = 40.0
 offset_right = 264.0
 offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
-text = "M"
+text = "F"
 metadata/_edit_use_anchors_ = true
 
 [node name="investigator" type="Label" parent="." unique_id=322999062]
@@ -259,7 +248,7 @@ offset_top = 76.0
 offset_right = 243.0
 offset_bottom = 88.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Investigator:"
 metadata/_edit_use_anchors_ = true
@@ -270,31 +259,9 @@ offset_top = 76.0
 offset_right = 317.0
 offset_bottom = 88.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Dr. Chrome"
-metadata/_edit_use_anchors_ = true
-
-[node name="nonclonal" type="Label" parent="." unique_id=1147173452]
-offset_left = 16.0
-offset_top = 128.0
-offset_right = 115.0
-offset_bottom = 140.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
-theme_override_font_sizes/font_size = 12
-text = "Nonclonal Findings:"
-metadata/_edit_use_anchors_ = true
-
-[node name="nonclonalValue" type="Label" parent="." unique_id=1834815059]
-offset_left = 123.0
-offset_top = 128.0
-offset_right = 190.0
-offset_bottom = 140.0
-theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
-theme_override_font_sizes/font_size = 12
-text = "47,XY,+13"
 metadata/_edit_use_anchors_ = true
 
 [node name="cell" type="Label" parent="." unique_id=1963562356]
@@ -303,7 +270,7 @@ offset_top = 168.00002
 offset_right = 216.0
 offset_bottom = 180.00002
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Cell:"
 metadata/_edit_use_anchors_ = true
@@ -314,7 +281,7 @@ offset_top = 168.0
 offset_right = 224.0
 offset_bottom = 180.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "9"
 metadata/_edit_use_anchors_ = true
@@ -325,7 +292,7 @@ offset_top = 177.6
 offset_right = 224.0
 offset_bottom = 189.6
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Slide:"
 metadata/_edit_use_anchors_ = true
@@ -336,7 +303,7 @@ offset_top = 177.6
 offset_right = 241.6
 offset_bottom = 189.6
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "G07"
 metadata/_edit_use_anchors_ = true
@@ -347,7 +314,7 @@ offset_top = 187.20001
 offset_right = 244.0
 offset_bottom = 199.20001
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Slide Type:"
 metadata/_edit_use_anchors_ = true
@@ -358,7 +325,7 @@ offset_top = 187.20001
 offset_right = 297.0
 offset_bottom = 199.20001
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Karuotype"
 metadata/_edit_use_anchors_ = true
@@ -369,7 +336,7 @@ offset_top = 213.0
 offset_right = 257.0
 offset_bottom = 225.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Total Counted:"
 metadata/_edit_use_anchors_ = true
@@ -380,7 +347,7 @@ offset_top = 213.0
 offset_right = 284.0
 offset_bottom = 225.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "20"
 metadata/_edit_use_anchors_ = true
@@ -391,7 +358,7 @@ offset_top = 222.0
 offset_right = 262.0
 offset_bottom = 234.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Total Analyzed:"
 metadata/_edit_use_anchors_ = true
@@ -402,7 +369,7 @@ offset_top = 222.0
 offset_right = 278.0
 offset_bottom = 234.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "8"
 metadata/_edit_use_anchors_ = true
@@ -413,7 +380,7 @@ offset_top = 232.0
 offset_right = 286.0
 offset_bottom = 244.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Total Karyogrammed:"
 metadata/_edit_use_anchors_ = true
@@ -424,7 +391,7 @@ offset_top = 232.0
 offset_right = 299.0
 offset_bottom = 244.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "4"
 metadata/_edit_use_anchors_ = true
@@ -435,7 +402,7 @@ offset_top = 241.6
 offset_right = 268.0
 offset_bottom = 253.6
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Band Resolution:"
 metadata/_edit_use_anchors_ = true
@@ -446,7 +413,7 @@ offset_top = 242.0
 offset_right = 339.0
 offset_bottom = 254.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "400 - 475"
 metadata/_edit_use_anchors_ = true
@@ -454,7 +421,7 @@ metadata/_edit_use_anchors_ = true
 [node name="window" type="Sprite2D" parent="." unique_id=571967183]
 position = Vector2(88, 224.99998)
 scale = Vector2(1.25, 1.25)
-texture = ExtResource("6_blush")
+texture = ExtResource("5_8m172")
 
 [node name="interpretation" type="Label" parent="." unique_id=867020521]
 offset_left = 16.0
@@ -462,7 +429,7 @@ offset_top = 304.0
 offset_right = 98.0
 offset_bottom = 316.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Interpretation :"
 metadata/_edit_use_anchors_ = true
@@ -473,13 +440,11 @@ offset_top = 320.0
 offset_right = 328.0
 offset_bottom = 437.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
-theme_override_font_sizes/font_size = 12
-text = "This is a normal Karyotype; no clonal abnormalities were detected at stated band level.
+theme_override_fonts/font = ExtResource("4_hfdxr")
+theme_override_font_sizes/font_size = 10
+text = "This is an abnormal karyotype. An unbalanced recombinant chromosome 8 is present, resulting in duplication of distal 8q and deletion of distal 8p, consistent with recombinant chromosome 8 syndrome.  The genomic imbalance leads to partial trisomy of the duplicated 8q region and partial monosomy of the deleted 8p region.
 
-There is a nonclonal finding, listed above. Nonclonal findings may result from technical artifact, but may be due to developing clonal abnormality or to low-level mosaicism.
-
-"
+ No additional clonal abnormalities were detected at the stated band level of resolution."
 autowrap_mode = 3
 metadata/_edit_use_anchors_ = true
 
@@ -489,7 +454,7 @@ offset_top = 432.0
 offset_right = 88.0
 offset_bottom = 444.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Completed by:"
 metadata/_edit_use_anchors_ = true
@@ -500,7 +465,7 @@ offset_top = 432.0
 offset_right = 243.0
 offset_bottom = 444.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Dr. Chrome"
 metadata/_edit_use_anchors_ = true
@@ -511,7 +476,7 @@ offset_top = 444.0
 offset_right = 167.0
 offset_bottom = 456.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Reviewed and Interpreted  by:"
 metadata/_edit_use_anchors_ = true
@@ -522,12 +487,12 @@ offset_top = 444.0
 offset_right = 243.0
 offset_bottom = 456.0
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
-theme_override_fonts/font = ExtResource("5_orbm0")
+theme_override_fonts/font = ExtResource("4_hfdxr")
 theme_override_font_sizes/font_size = 12
 text = "Dr. Osome"
 metadata/_edit_use_anchors_ = true
 
-[node name="ReportSheet1" type="Sprite2D" parent="." unique_id=210079447]
+[node name="ReportSheet2" type="Sprite2D" parent="." unique_id=652310060]
 position = Vector2(88, 225)
-scale = Vector2(0.21710527, 0.15343077)
-texture = ExtResource("8_ercb6")
+scale = Vector2(0.21710527, 0.1626429)
+texture = ExtResource("6_l1b3s")

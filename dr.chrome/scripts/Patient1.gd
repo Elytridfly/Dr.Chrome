@@ -5,7 +5,7 @@ var answerSex: bool = true
 var answerCount: int = 0
 var answerAbnormality: int = 0
 
-const CORRECT_SEX: bool = false      
+const CORRECT_SEX: bool = true      
 const CORRECT_COUNT: int = 46       
 const CORRECT_ABNORMALITY: int = 8  
 

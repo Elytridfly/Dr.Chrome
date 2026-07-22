@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://bg2j70d5j31vq" path="res://assets/webfontkit-BoldPixels/boldpixels.ttf" id="2_faxov"]
 [ext_resource type="Texture2D" uid="uid://br1xq70o6d53p" path="res://assets/Eris Esra's Character Template 4.1/Patient1/Idle_p1.png" id="3_hl81x"]
 [ext_resource type="Texture2D" uid="uid://bkq1egpwpbq7e" path="res://assets/Eris Esra's Character Template 4.1/Patient2/Idle_p2.png" id="4_73dpb"]
-[ext_resource type="Texture2D" uid="uid://dor5pvfdlije2" path="res://assets/Eris Esra's Character Template 4.1/Patient3/Idle_p3.png" id="5_g6lwx"]
+[ext_resource type="Texture2D" uid="uid://cge210d4ntk08" path="res://assets/Eris Esra's Character Template 4.1/Patient3/p3-4idle.png" id="6_04qlw"]
 [ext_resource type="Texture2D" uid="uid://dcps7pdhkt2hw" path="res://assets/unStar.png" id="6_5hn41"]
 [ext_resource type="Texture2D" uid="uid://c5lmkwtho7kp8" path="res://assets/Star.png" id="7_n2k88"]
 [ext_resource type="FontFile" uid="uid://yo1b42pll8nu" path="res://assets/webfontkit-BoldPixels/BoldPixels.otf" id="8_eaoty"]
@@ -43,19 +43,19 @@ atlas = ExtResource("4_73dpb")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rlw0o"]
-atlas = ExtResource("5_g6lwx")
+atlas = ExtResource("6_04qlw")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m35g4"]
-atlas = ExtResource("5_g6lwx")
+atlas = ExtResource("6_04qlw")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wdhy8"]
-atlas = ExtResource("5_g6lwx")
+atlas = ExtResource("6_04qlw")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0ya2q"]
-atlas = ExtResource("5_g6lwx")
+atlas = ExtResource("6_04qlw")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1vivr"]
@@ -340,7 +340,7 @@ pivot_offset = Vector2(96, 24)
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("2_faxov")
 theme_override_font_sizes/font_size = 17
-text = "Patient 1:"
+text = "Case 1:"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
@@ -355,7 +355,7 @@ pivot_offset = Vector2(96, 24)
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("2_faxov")
 theme_override_font_sizes/font_size = 17
-text = "Patient 2:"
+text = "Case 2:"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
@@ -370,7 +370,7 @@ pivot_offset = Vector2(96, 24)
 theme_override_colors/font_color = Color(0, 0.05861616, 0.4203177, 1)
 theme_override_fonts/font = ExtResource("2_faxov")
 theme_override_font_sizes/font_size = 17
-text = "Patient 3:"
+text = "Case 3:"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
